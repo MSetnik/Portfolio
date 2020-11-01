@@ -22,7 +22,7 @@
 
 .avatar-img {
   height: 250px;
-  padding-top: 8em;
+  padding-top: 4em;
 }
 
 .banner-text {
@@ -34,7 +34,7 @@
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
 }
@@ -89,6 +89,7 @@
 
 .contact-grid h2 {
   font-family: 'Anton', sans-serif;
+  font-size: 40px;
 }
 
 .contact-grid p {

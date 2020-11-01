@@ -26,7 +26,7 @@ class Resume extends Component {
                         <h5>Adresa</h5>
                         <p>D. Cesarića 67, 31550 Valpovo</p>
                         <h5>Telefon</h5>
-                        <p>091 9566 277</p>
+                        <p>Na upit</p>
                         <h5>Email</h5>
                         <p>setnik99@gmail.com</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
