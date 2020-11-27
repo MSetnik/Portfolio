@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl';
+import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, Button, CardText } from 'react-mdl';
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = { activeTab: 0};
     }
+
+
 
     toggleCategories() {
         if(this.state.activeTab === 0) {
@@ -14,16 +16,17 @@ class Projects extends Component {
                      {/* project 1 */}
                     <Card className="projects-card" shadow={5} style={{minWidth: '450'}}>
                         <CardTitle style={{color: '#000', height: '120px', background: 'url(https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA) center / cover'}}>
-
+                            
                         </CardTitle>
 
                         <CardText >
                         <h4 style={{fontWeight: 'bold'}}>City Infrastructure Manager</h4>
-                        Sustav City infrastructure manager ima zadaću evidentirati infrastrukturne ispade na području određenog grada, kako bi građani imali te informacije dostupne javno. Evidentiraju se sljedeće vrste ispada: nestanak električne energije, nestanak plina, nestanak vode, prekid prometa određeno relacijom.
-                        <p></p>
+                        <p>
+                            Sustav City infrastructure manager ima zadaću evidentirati infrastrukturne ispade na području određenog grada, kako bi građani imali te informacije dostupne javno. Evidentiraju se sljedeće vrste ispada: nestanak električne energije, nestanak plina, nestanak vode, prekid prometa određeno relacijom.
+                        </p>
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/CityInfrastructureManager" target="_blank" >Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/CityInfrastructureManager" target="_blank">Github</a></Button>
                         </CardActions>
                     </Card>
                     {/* project 2 */}
@@ -36,7 +39,7 @@ class Projects extends Component {
                             <p>Aplikacija sadrži funkcionalnost parsiranja vijesti sa stranice fakulteta te prikaz detaljnijeg opisa vijesti odabirom na nju. Glavni activity sadrži korisne linkove te prikaz vijest, prikaz studijskih programa koje fakultet nudi koji se   dohvaćaju sa servera, prikaz dokumenta (također na serveru), kontakt informacije fakulteta te otvaranje web stranice sa 360   prikazom školskog prostora. Osim toga, aplikacija ima mogućnost prikaza push obavijesti koje su također spremljene na     serveru. Za dohvaćanje podataka sa servera je korišten Retrofit.</p>
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/VSMTINews" target="_blank">Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/VSMTINews" target="_blank" >Github</a></Button>
                         </CardActions>
                     </Card>
                     {/* project 1 */}
@@ -52,7 +55,7 @@ class Projects extends Component {
                             </p>
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/FoodApp" target="_blank">Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/FoodApp" target="_blank" >Github</a></Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -77,7 +80,7 @@ class Projects extends Component {
                            
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/UpravljanjeSkladistem" target="_blank">Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/UpravljanjeSkladistem" target="_blank" >Github</a></Button>
                         </CardActions>
                     </Card>
                     {/* project 2 */}
@@ -94,7 +97,7 @@ class Projects extends Component {
                             
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/AdministracijaHotela" target="_blank">Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/AdministracijaHotela" target="_blank" >Github</a></Button>
                         </CardActions>
                     </Card>
                     <Card className="projects-card" shadow={5} style={{minWidth: '450' , margin:'auto'}}>
@@ -111,7 +114,7 @@ class Projects extends Component {
                            
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href="https://github.com/MSetnik/Portfolio" target="_blank">Github</a></Button>
+                            <Button colored><a href="https://github.com/MSetnik/Portfolio" target="_blank" >Github</a></Button>
                         </CardActions>
                     </Card>
                 </div>

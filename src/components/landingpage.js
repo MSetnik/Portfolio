@@ -15,7 +15,7 @@ class LandingPage extends Component {
 
                         <div className="banner-text">
                             <h1>Matko Setnik</h1>
-                            <h4 style={{color:'white'}}>bacc. comp. ing.</h4>
+                            <h4 style={{color:'white'}}>bacc. ing. comp.</h4>
 
                             <hr/>
 
