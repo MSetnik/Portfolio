@@ -4,7 +4,6 @@ import { Layout, Header, Navigation, Drawer,Content  } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 import fire from './firebase';
-import { logDOM } from '@testing-library/react';
 
 class App extends Component {
     constructor() {
@@ -42,10 +41,10 @@ class App extends Component {
             visitors_count: visitorsCount + 1
         }
 
-        if(newVisitors != null) {
-            eventref.set(newVisitors);
+        // if(newVisitors != null) {
+        //     eventref.set(newVisitors);
 
-        }
+        // }
                 
         console.log("Stranicu je posjetilo ukupno "+ newVisitors.visitors_count + " osobe");
 

@@ -129,8 +129,21 @@
   }
 } */
 
+
+
 .projects-card {
   margin: auto;
+  margin-top: 0px !important;
+}
+
+.img-slider {
+  width: 180px; 
+  height: 350px;
+}
+
+.web-img-slider {
+  width: 300px;
+  height: 200px;
 }
 
 @media screen and (max-width: 65em){
