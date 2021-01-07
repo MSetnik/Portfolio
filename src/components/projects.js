@@ -10,7 +10,6 @@ import {
   Button,
   CardText,
 } from "react-mdl";
-
 import Slider from "./imageSlider";
 import WebSlider from "./webSlider";
 import data from "./assets/images.js";
@@ -91,7 +90,7 @@ class Projects extends Component {
               marginTop: "20px",
             }}
           >
-            <div style={{ padding: "20px" }}>
+            <div style={{ padding: "20px", display: "flex", height: "100%" }}>
               <Card
                 className="single-card"
                 shadow={5}
@@ -120,12 +119,7 @@ class Projects extends Component {
                     />
                   </CardTitle>
 
-                  <Grid
-                    style={{
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
+                  <Grid className="card-mobile-grid">
                     <Cell col={6}>
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>
@@ -141,7 +135,7 @@ class Projects extends Component {
                         </p>
                       </CardText>
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={6} className="slider-mobile-cell">
                       <div>
                         <Slider images={this.androidImages[0].cim}></Slider>
                       </div>
@@ -149,7 +143,7 @@ class Projects extends Component {
                   </Grid>
                 </div>
 
-                <CardActions border>
+                <CardActions border className="project-card-action">
                   <Button colored>
                     <a
                       href="https://github.com/MSetnik/CityInfrastructureManager"
@@ -199,14 +193,9 @@ class Projects extends Component {
                     />
                   </CardTitle>
 
-                  <Grid
-                    style={{
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Cell col={6}>
-                      <div>
+                  <Grid className="card-mobile-grid">
+                    <Cell className="slider-mobile-cell" col={6}>
+                      <div className="slider">
                         <Slider images={this.androidImages[0].vsmti}></Slider>
                       </div>
                     </Cell>
@@ -231,7 +220,7 @@ class Projects extends Component {
                   </Grid>
                 </div>
 
-                <CardActions border>
+                <CardActions className="project-card-action" border>
                   <Button colored>
                     <a
                       href="https://github.com/MSetnik/VSMTINews"
@@ -281,12 +270,7 @@ class Projects extends Component {
                     />
                   </CardTitle>
 
-                  <Grid
-                    style={{
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
+                  <Grid className="card-mobile-grid">
                     <Cell col={6}>
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>
@@ -301,7 +285,7 @@ class Projects extends Component {
                         </p>
                       </CardText>
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={6} className="slider-mobile-cell">
                       <div>
                         <Slider images={this.androidImages[0].res}></Slider>
                       </div>
@@ -309,7 +293,7 @@ class Projects extends Component {
                   </Grid>
                 </div>
 
-                <CardActions border>
+                <CardActions border className="project-card-action">
                   <Button colored>
                     <a
                       href="https://github.com/MSetnik/FoodApp"
@@ -359,14 +343,8 @@ class Projects extends Component {
                     />
                   </CardTitle>
 
-                  <Grid
-                    id="grid"
-                    style={{
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Cell col={6} id="rn-slider">
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
                       <div>
                         <Slider images={this.androidImages[0].todo}></Slider>
                       </div>
@@ -392,7 +370,7 @@ class Projects extends Component {
                   </Grid>
                 </div>
 
-                <CardActions border>
+                <CardActions border className="project-card-action">
                   <Button colored>
                     <a
                       href="https://github.com/MSetnik/RNTodoApp-using-cli"
@@ -419,14 +397,7 @@ class Projects extends Component {
             }}
           >
             <div style={{ padding: "20px" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
+              <Card className="single-card" shadow={5}>
                 <div style={{ display: "inline-block" }}>
                   <CardTitle
                     id="skladiste-img"
@@ -488,14 +459,7 @@ class Projects extends Component {
             }}
           >
             <div style={{ padding: "20px" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
+              <Card className="single-card" shadow={5}>
                 <div style={{ display: "inline-block" }}>
                   <CardTitle
                     className="project-title"
@@ -557,14 +521,7 @@ class Projects extends Component {
             }}
           >
             <div style={{ padding: "20px" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
+              <Card className="single-card" shadow={5}>
                 <div style={{ display: "inline-block" }}>
                   <CardTitle
                     className="project-title"
@@ -615,7 +572,6 @@ class Projects extends Component {
   }
 
   render() {
-    const closeModalHandler = () => this.setState({ show: false });
     return (
       <div className="category-tabs">
         <div style={{ position: "relative" }}>
@@ -624,7 +580,7 @@ class Projects extends Component {
             onChange={(tabId) => this.setState({ activeTab: tabId })}
             ripple
           >
-            <Tab>Android</Tab>
+            <Tab>Mobile</Tab>
             <Tab>Web</Tab>
           </Tabs>
 

@@ -2,34 +2,41 @@ import React, { Component } from "react";
 import { Card, Button } from "react-mdl";
 import data from "./assets/images.js";
 
-class Slider extends Component {
+class WebSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
       properties: props.images,
       property: props.images[0],
-      index: null,
+      index: 0,
     };
     console.log(props);
     this.nextImg = this.nextImg.bind(this);
     this.prevImg = this.prevImg.bind(this);
     // this.imageFullscreen = this.imageFullscreen.bind(this);
   }
-
   nextImg() {
-    const newIndex = this.state.property.index + 1;
-    console.log(newIndex);
+    const newIndex =
+      this.state.properties.length <= this.state.index + 1
+        ? 0
+        : this.state.property.index + 1;
     this.setState({
       property: this.state.properties[newIndex],
+      index: newIndex,
     });
-    console.log(this.state.property);
+    console.log(this.state.index);
   }
 
   prevImg() {
-    const newIndex = this.state.property.index - 1;
+    const newIndex =
+      0 <= this.state.index - 1
+        ? this.state.index - 1
+        : this.state.properties.length - 1;
     this.setState({
       property: this.state.properties[newIndex],
+      index: newIndex,
     });
+    console.log(this.state.index);
   }
 
   // imageFullscreen () {
@@ -41,52 +48,46 @@ class Slider extends Component {
   //     )
   // }
 
+  setClassName(imageTitle) {
+    if (imageTitle.includes("hoteli")) {
+      return "img-hoteli";
+    } else if (imageTitle.includes("skladiste")) {
+      return "img-skladiste";
+    }
+  }
+
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
-        {/* <Card style={{ display:'inline-block'}}>
-                   
-            
-                    
-                <img src={this.state.property.localUrl} 
-                    className="web-img-slider"></img>
-                
-                <Button  
-                        style={{}} 
-                        onClick={this.prevImg} 
-                        disabled={this.state.property.index === 0}><i class="fa fa-chevron-left"></i></Button>
-                <Button 
-                    onClick={this.nextImg}
-                    disabled={this.state.property.index === this.state.properties.length-1}><i class="fa fa-chevron-right"></i></Button>
-
-                </Card>    */}
+      <div
+        style={{
+          textAlign: "center",
+          backgroundColor: "yellow",
+        }}
+      >
         <div>
-          <Card
-            style={{
-              display: "flex",
-              width: "100%",
-              alignItems: "center",
-            }}
-          >
-            <img
-              src={this.state.property.localUrl}
-              className="web-img-slider"
-              onClick={this.imageFullscreen}
-            ></img>
+          <Card className="web-card">
+            {this.state.properties.map((object, index) => {
+              console.log(object);
+              return (
+                <div
+                  className={
+                    index === this.state.index ? "web-img-active" : "web-img"
+                  }
+                >
+                  <img
+                    src={object.localUrl}
+                    // className="web-slider"
+                    className={this.setClassName(object.imageTitle)}
+                    onClick={this.imageFullscreen}
+                  ></img>
+                </div>
+              );
+            })}
             <div>
-              <Button
-                onClick={this.prevImg}
-                disabled={this.state.property.index === 0}
-              >
+              <Button style={{ cursor: "pointer" }} onClick={this.prevImg}>
                 <i class="fa fa-chevron-left"></i>
               </Button>
-              <Button
-                style={{}}
-                onClick={this.nextImg}
-                disabled={
-                  this.state.property.index === this.state.properties.length - 1
-                }
-              >
+              <Button style={{ cursor: "pointer" }} onClick={this.nextImg}>
                 <i class="fa fa-chevron-right"></i>
               </Button>
             </div>
@@ -97,4 +98,4 @@ class Slider extends Component {
   }
 }
 
-export default Slider;
+export default WebSlider;

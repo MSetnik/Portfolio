@@ -8,71 +8,74 @@ class Slider extends Component {
     this.state = {
       properties: props.images,
       property: props.images[0],
-      index: null,
+      index: 0,
       show: false,
       setShow: false,
     };
     console.log(props);
     this.nextImg = this.nextImg.bind(this);
     this.prevImg = this.prevImg.bind(this);
-    this.imageFullscreen = this.imageFullscreen.bind(this);
   }
 
   nextImg() {
-    const newIndex = this.state.property.index + 1;
-    console.log(newIndex);
+    const newIndex =
+      this.state.properties.length <= this.state.index + 1
+        ? 0
+        : this.state.property.index + 1;
     this.setState({
       property: this.state.properties[newIndex],
+      index: newIndex,
     });
-    console.log(this.state.property);
+    console.log(this.state.index);
   }
 
   prevImg() {
-    const newIndex = this.state.property.index - 1;
+    const newIndex =
+      0 <= this.state.index - 1
+        ? this.state.index - 1
+        : this.state.properties.length - 1;
     this.setState({
       property: this.state.properties[newIndex],
+      index: newIndex,
     });
-  }
-
-  imageFullscreen() {
-    console.log("clicked");
-    this.setState({ show: true });
-    // return (
-    //     <ImageFullscreen></ImageFullscreen>
-    // )
+    console.log(this.state.index);
   }
 
   render() {
-    const closeModalHandler = () => this.setState({ setShow: false });
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Button
-          onClick={this.prevImg}
-          disabled={this.state.property.index === 0}
-        >
+      <div className="img-slider-div">
+        <Button onClick={this.prevImg}>
           <i class="fa fa-chevron-left"></i>
         </Button>
 
-        <Card>
-          <img
-            src={this.state.property.localUrl}
-            className="img-slider"
-            onClick={this.imageFullscreen}
-          ></img>
-        </Card>
-        <Button
-          style={{}}
-          onClick={this.nextImg}
-          disabled={
-            this.state.property.index === this.state.properties.length - 1
-          }
+        <Card
+          className="img-slider-card"
+          // style={{ display: "flex", height: "100%" }}
         >
+          {this.state.properties.map((object, index) => {
+            console.log(object.localUrl);
+            // return (
+            //   <div
+            //     className={index === this.state.index ? "img-active" : "img"}
+            //   >
+            //     <img
+            //       src={object.localUrl}
+            //       className="img-slider"
+            //       onClick={this.imageFullscreen}
+            //     ></img>
+            //   </div>
+            // );
+            return (
+              <img
+                src={object.localUrl}
+                id="img-slider"
+                className={index === this.state.index ? "img-active" : "img"}
+                onClick={this.imageFullscreen}
+              ></img>
+            );
+          })}
+        </Card>
+        <Button style={{ cursor: "pointer" }} onClick={this.nextImg}>
           <i class="fa fa-chevron-right"></i>
         </Button>
       </div>
