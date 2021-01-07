@@ -13,7 +13,6 @@ import {
 import Slider from "./imageSlider";
 import WebSlider from "./webSlider";
 import data from "./assets/images.js";
-import { ImageFullscreen } from "./imageFullscreen";
 
 class Projects extends Component {
   androidImages = [
@@ -42,7 +41,6 @@ class Projects extends Component {
     // this.loadImages = this.loadImages.bind(this);
     // this.loadImages();
     this.loadImages();
-    this.imageFullscreen = this.imageFullscreen.bind(this);
   }
 
   loadImages() {
@@ -59,7 +57,6 @@ class Projects extends Component {
       });
 
       element.Web.forEach((element) => {
-        console.log(element);
         this.webImages = [
           {
             hoteli: element.hoteli,
@@ -67,15 +64,6 @@ class Projects extends Component {
           },
         ];
       });
-    });
-  }
-
-  imageFullscreen(images) {
-    console.log("clicked");
-    console.log(this.androidImages[0].cim);
-    this.setState({
-      show: this.state.show ? false : true,
-      selectedImages: images,
     });
   }
 
@@ -386,7 +374,6 @@ class Projects extends Component {
         </div>
       );
     } else if (this.state.activeTab === 1) {
-      console.log(this.webImages[0].hoteli);
       return (
         <div>
           {/* project 1 */}

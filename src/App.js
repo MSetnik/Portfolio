@@ -26,9 +26,7 @@ class App extends Component {
   };
 
   handleResponse = async () => {
-    var nInt;
     var visitorsCount;
-    var visitors;
     var newVisitors;
     const eventref = fire.database().ref("visitors");
     const snapshot = await eventref.once("value");
@@ -54,7 +52,7 @@ class App extends Component {
       <div className="demo-big-content">
         <Layout>
           <Header className="header-background" title="Portfolio" scroll>
-            <Navigation onClick={() => console.log("clicked")}>
+            <Navigation>
               <Link to="/">Početna</Link>
               <Link to="/resume">Životopis</Link>
               <Link to="/projects">Projekti</Link>

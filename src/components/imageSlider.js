@@ -1,6 +1,5 @@
 import React, { Component, useState } from "react";
 import { Card, Button } from "react-mdl";
-import { ImageFullscreen } from "./imageFullscreen";
 
 class Slider extends Component {
   constructor(props) {
@@ -12,7 +11,6 @@ class Slider extends Component {
       show: false,
       setShow: false,
     };
-    console.log(props);
     this.nextImg = this.nextImg.bind(this);
     this.prevImg = this.prevImg.bind(this);
   }
@@ -26,7 +24,6 @@ class Slider extends Component {
       property: this.state.properties[newIndex],
       index: newIndex,
     });
-    console.log(this.state.index);
   }
 
   prevImg() {
@@ -38,7 +35,6 @@ class Slider extends Component {
       property: this.state.properties[newIndex],
       index: newIndex,
     });
-    console.log(this.state.index);
   }
 
   render() {
@@ -48,29 +44,13 @@ class Slider extends Component {
           <i class="fa fa-chevron-left"></i>
         </Button>
 
-        <Card
-          className="img-slider-card"
-          // style={{ display: "flex", height: "100%" }}
-        >
+        <Card className="img-slider-card">
           {this.state.properties.map((object, index) => {
-            console.log(object.localUrl);
-            // return (
-            //   <div
-            //     className={index === this.state.index ? "img-active" : "img"}
-            //   >
-            //     <img
-            //       src={object.localUrl}
-            //       className="img-slider"
-            //       onClick={this.imageFullscreen}
-            //     ></img>
-            //   </div>
-            // );
             return (
               <img
                 src={object.localUrl}
                 id="img-slider"
                 className={index === this.state.index ? "img-active" : "img"}
-                onClick={this.imageFullscreen}
               ></img>
             );
           })}

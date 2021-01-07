@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Card, Button } from "react-mdl";
-import data from "./assets/images.js";
 
 class WebSlider extends Component {
   constructor(props) {
@@ -10,10 +9,8 @@ class WebSlider extends Component {
       property: props.images[0],
       index: 0,
     };
-    console.log(props);
     this.nextImg = this.nextImg.bind(this);
     this.prevImg = this.prevImg.bind(this);
-    // this.imageFullscreen = this.imageFullscreen.bind(this);
   }
   nextImg() {
     const newIndex =
@@ -24,7 +21,6 @@ class WebSlider extends Component {
       property: this.state.properties[newIndex],
       index: newIndex,
     });
-    console.log(this.state.index);
   }
 
   prevImg() {
@@ -36,17 +32,7 @@ class WebSlider extends Component {
       property: this.state.properties[newIndex],
       index: newIndex,
     });
-    console.log(this.state.index);
   }
-
-  // imageFullscreen () {
-  //     console.log('clicked')
-  //     return (
-  //         <div style={{backgroundColor: 'black', justifyContent: 'center', position:'relative'}}>
-  //             <img src={this.state.property.localUrl} style={{width: '50%', height: '100%'}}></img>
-  //         </div>
-  //     )
-  // }
 
   setClassName(imageTitle) {
     if (imageTitle.includes("hoteli")) {
@@ -67,7 +53,6 @@ class WebSlider extends Component {
         <div>
           <Card className="web-card">
             {this.state.properties.map((object, index) => {
-              console.log(object);
               return (
                 <div
                   className={
@@ -76,9 +61,7 @@ class WebSlider extends Component {
                 >
                   <img
                     src={object.localUrl}
-                    // className="web-slider"
                     className={this.setClassName(object.imageTitle)}
-                    onClick={this.imageFullscreen}
                   ></img>
                 </div>
               );
