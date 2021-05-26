@@ -1,0 +1,454 @@
+/* animations */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideInWeb {
+  0% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.page-content {
+  width: 100%;
+  height: 100%;
+}
+
+.header-background {
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.main-container {
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* 
+  display: flex;
+  text-align: center; */
+
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.main-container{
+  background-color: red;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 4em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.7;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+.single-project-grid {
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
+
+.contact-grid p {
+  font-family: "oxygen", sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 30px;
+  padding-right: 5rem;
+}
+
+.contact-content {
+  justify-content: center;
+  font-size: 23px !important;
+}
+
+.resume-right-col {
+  background: #27221f;
+  color: rgb(241, 240, 240);
+  padding: 2em;
+}
+
+.projects-card {
+  margin: auto;
+  margin-top: 0px !important;
+}
+
+.img-slider {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.img-slider-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.img-hoteli {
+  width: 1100px !important;
+  height: 800px !important;
+  border-radius: 10px;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.img-skladiste {
+  width: 1084px !important;
+  height: 582px !important;
+  border-radius: 10px;
+
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.web-card {
+  display: flex;
+  width: 100% !important;
+  height: 80% !important;
+  align-content: center;
+  align-items: center;
+}
+
+.img-slider-card {
+  display: flex;
+  height: 100%;
+}
+
+.img {
+  opacity: 0;
+  display: none;
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.img-active {
+  opacity: 1;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.web-img {
+  opacity: 0;
+  display: none;
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.web-img-active {
+  opacity: 1;
+  animation-name: slideInWeb;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.single-card {
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+
+.slider-mobile-cell {
+  display: flex;
+  height: 100% !important;
+  justify-content: center;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  /* background-color: rgba(63,61,61,0.692); */
+}
+
+.card-mobile-grid {
+  display: flex;
+  height: 100% !important;
+  width: 100% !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.modal-wrapper img {
+  display: block;
+  width: 30rem;
+  height: 50rem;
+  margin: auto;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.back-drop {
+  background-color: rgba(63, 61, 61, 0.692);
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.modal-items {
+  z-index: 1000 !important;
+  width: 30rem;
+  height: 50rem;
+}
+
+@media screen and (max-width: 65em) {
+  .single-card div {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .card-mobile-grid {
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  #rn-img {
+    height: 100% !important;
+  }
+
+  #react-img {
+    height: 100% !important;
+  }
+
+  #js-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #hoteli-img {
+    width: 320px !important;
+    height: 120px !important;
+  }
+
+  .slider-mobile-cell div {
+    width: 100% !important;
+  }
+
+  .img-slider {
+    width: 100% !important;
+    height: 100% !important;
+    align-content: center;
+    position: static;
+  }
+
+  .img-hoteli {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .img-skladiste {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px;
+
+    display: flex;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .projects-card {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .project-title {
+    height: 200px !important;
+  }
+
+  .resume-right-col {
+    width: 100% !important;
+  }
+
+  .resume-left-col {
+    width: 100% !important;
+  }
+
+  .contact-body {
+    position: relative;
+  }
+
+  .contact-cell {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-content {
+    font-size: 20px !important;
+    justify-content: center;
+  }
+
+  .contact-content i {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+
+  .landing-grid {
+    height: 100%;
+    background-color: red;
+
+  }
+
+  .banner-text {
+    width: 75%;
+  }
+
+  .main-container{
+    height: 100%;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .main-container{
+    height: auto;
+    background-color: orange;
+  }
+}
