@@ -432,7 +432,6 @@
 
   .landing-grid {
     height: 100%;
-    background-color: red;
 
   }
 
@@ -442,13 +441,11 @@
 
   .main-container{
     height: 100%;
-    background-color: blue;
   }
 }
 
 @media screen and (max-width: 20em) {
   .main-container{
     height: auto;
-    background-color: orange;
   }
 }
