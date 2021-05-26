@@ -8,7 +8,7 @@ class Contact extends Component {
                 <Grid className="contact-grid">
                     <Cell className="contact-cell" col ={6}>
                         <h2>Matko Setnik</h2>
-                        <h4>bacc. comp. ing.</h4>
+                        <h4>Frontend mobile developer</h4>
                         <img 
                             src="https://icon-library.com/images/avatar-icon/avatar-icon-4.jpg"
                             alt="avatar"
@@ -16,7 +16,7 @@ class Contact extends Component {
                         />
 
                         <p stlye={{width: '75%' , margin: 'auto'}}>
-                            Moje ime je Matko Setnik, dolazim iz Valpova te sam završio preddiplomski stručni studij Računarstva, smjera Programsko inženjerstvo u Virovitici.
+                            Zainteresirani za suradnju? Kontaktirajte me!
                         </p>
                     </Cell>
                     <Cell className="contact-cell" col ={6}>

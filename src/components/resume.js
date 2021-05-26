@@ -19,13 +19,13 @@ class Resume extends Component {
             </div>
 
             <h2 style={{ paddingTop: "1em" }}>Matko Setnik</h2>
-            <h4 style={{ color: "grey" }}>Programer</h4>
+            <h4 style={{ color: "grey" }}>Frontend mobile developer</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p>
-              Moje ime je Matko Setnik, dolazim iz Valpova te sam završio
+              Moje ime je Matko Setnik, dolazim iz Valpova, <br/>
+              te sam završio
               preddiplomski stručni studij Računarstva, smjera Programsko
-              inženjerstvo u Virovitici. Trenutno područje interesa mi je
-              Android development.
+              inženjerstvo u Virovitici. 
             </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Adresa</h5>
@@ -75,19 +75,29 @@ class Resume extends Component {
               jobName="Stručna praksa (Android)"
               jobDescription="Kreiranje jednostavne aplikacije za prikaz informacija o fakultetu"
               companyName="VSMTI"
+              jobPlace='Matije Gupca 78, Virovitica'
+            />
+
+            <Experience
+              startYear="25/01/2021"
+              endYear="Danas"
+              jobName="Pripravnik u službi za razvoj aplikativnih rješenja"
+              jobDescription="Frontend mobile developer"
+              companyName="mStart plus d.o.o."
+              jobPlace="Slavonska avenija 11a, Zagreb"
             />
 
             <hr style={{ borderTop: "3px solid #e22947" }} />
 
             <h2>Vještine</h2>
 
-            <Skills skill="Android (Java)" progress={47} />
+            <Skills skill="React Native" progress={50} />
 
-            <Skills skill="React Native" progress={20} />
+            <Skills skill="Android (Java)" progress={35} />
 
-            <Skills skill="HTML/CSS + Javascript" progress={35} />
+            <Skills skill="HTML/CSS + Javascript" progress={40} />
 
-            <Skills skill="ReactJS" progress={10} />
+            <Skills skill="ReactJS" progress={30} />
 
             <Skills skill="SQL" progress={40} />
 
