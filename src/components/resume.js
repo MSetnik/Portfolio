@@ -102,6 +102,9 @@ class Resume extends Component {
             <Skills skill="SQL" progress={40} />
 
             <Skills skill="C#" progress={20} />
+
+            <Skills skill="PHP" progress={20} />
+
           </Cell>
         </Grid>
       </div>
