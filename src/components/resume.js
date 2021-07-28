@@ -29,7 +29,7 @@ class Resume extends Component {
             </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Adresa</h5>
-            <p>D. Cesarića 67, 31550 Valpovo</p>
+            <p>Valpovo, Hrvatska</p>
             <h5>Telefon</h5>
             <p>Na upit</p>
             <h5>Email</h5>
@@ -73,16 +73,25 @@ class Resume extends Component {
               startYear="10/07/2020"
               endYear="04/09/2020"
               jobName="Stručna praksa (Android)"
-              jobDescription="Kreiranje jednostavne aplikacije za prikaz informacija o fakultetu"
+              jobDescription="Kreiranje aplikacije za prikaz informacija o fakultetu"
               companyName="VSMTI"
               jobPlace='Matije Gupca 78, Virovitica'
             />
 
             <Experience
               startYear="25/01/2021"
+              endYear="01/07/2021"
+              jobName="Pripravnik u Službi razvoja aplikativnih rješenja"
+              jobDescription="Frontend mobile developer - React Native"
+              companyName="mStart plus d.o.o."
+              jobPlace="Slavonska avenija 11a, Zagreb"
+            />
+
+            <Experience
+              startYear="01/07/2021"
               endYear="Danas"
-              jobName="Pripravnik u službi za razvoj aplikativnih rješenja"
-              jobDescription="Frontend mobile developer"
+              jobName="Mlađi Specijalist u Službi razvoja aplikativnih rješenja"
+              jobDescription="Frontend mobile developer - React Native"
               companyName="mStart plus d.o.o."
               jobPlace="Slavonska avenija 11a, Zagreb"
             />
@@ -98,6 +107,7 @@ class Resume extends Component {
             <Skills skill="HTML/CSS + Javascript" progress={40} />
 
             <Skills skill="ReactJS" progress={30} />
+
 
             <Skills skill="SQL" progress={40} />
 

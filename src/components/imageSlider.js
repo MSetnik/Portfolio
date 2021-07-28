@@ -5,6 +5,7 @@ class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      imageCssClass: 'img-active-slide-right',
       properties: props.images,
       property: props.images[0],
       index: 0,
@@ -16,6 +17,9 @@ class Slider extends Component {
   }
 
   nextImg() {
+    this.setState({
+      imageCssClass: 'img-active-slide-right'
+    })
     const newIndex =
       this.state.properties.length <= this.state.index + 1
         ? 0
@@ -27,6 +31,9 @@ class Slider extends Component {
   }
 
   prevImg() {
+    this.setState({
+      imageCssClass: 'img-active-slide-left'
+    })
     const newIndex =
       0 <= this.state.index - 1
         ? this.state.index - 1
@@ -50,7 +57,7 @@ class Slider extends Component {
               <img
                 src={object.localUrl}
                 id="img-slider"
-                className={index === this.state.index ? "img-active" : "img"}
+                className={index === this.state.index ? this.state.imageCssClass : "img"}
               ></img>
             );
           })}

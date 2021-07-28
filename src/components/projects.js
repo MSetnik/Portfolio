@@ -14,6 +14,7 @@ import Slider from "./imageSlider";
 import WebSlider from "./webSlider";
 import data from "./assets/images.js";
 
+
 class Projects extends Component {
   androidImages = [
     {
@@ -30,9 +31,10 @@ class Projects extends Component {
     },
   ];
 
-  constructor(props) {
+  constructor(props, {inViewport}) {
     super(props);
     this.state = {
+      inViewport,
       activeTab: 0,
       show: false,
       selectedImages: [],
@@ -108,7 +110,7 @@ class Projects extends Component {
                   </CardTitle>
 
                   <Grid className="card-mobile-grid">
-                    <Cell col={6}>
+                    <Cell col={6} className='project-info-cell'>
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>
                           City Infrastructure Manager
