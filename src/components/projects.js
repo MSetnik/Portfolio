@@ -31,10 +31,9 @@ class Projects extends Component {
     },
   ];
 
-  constructor(props, {inViewport}) {
+  constructor(props) {
     super(props);
     this.state = {
-      inViewport,
       activeTab: 0,
       show: false,
       selectedImages: [],
