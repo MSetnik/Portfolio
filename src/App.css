@@ -1,14 +1,14 @@
 /* animations */
-@keyframes slideIn {
+@keyframes slideInLeft {
   0% {
-    transform: translateX(-500px);
+    transform: translateX(-400px);
   }
   100% {
     transform: translateX(0px);
   }
 }
 
-@keyframes slideInWeb {
+@keyframes slideInWebLeft {
   0% {
     transform: translateX(-1300px);
   }
@@ -16,6 +16,37 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideInWebRight {
+  0% {
+    transform: translateX(1300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 
 .page-content {
@@ -119,6 +150,12 @@
   display: inline-block;
   width: 100%;
 }
+
+/* .project-info-cell {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+} */
 
 .contact-body {
   margin: auto;
@@ -238,12 +275,26 @@
   object-position: 50% 50%;
 }
 
-.img-active {
+.img-active-slide-left {
   opacity: 1;
-  animation-name: slideIn;
+  animation-name: slideInLeft;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
 
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+.img-active-slide-right {
+  opacity: 1;
+  animation-name: slideInRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
   width: 100% !important;
   height: 100% !important;
   border-radius: 10px;
@@ -265,9 +316,24 @@
   object-position: 50% 50%;
 }
 
-.web-img-active {
+.web-img-active-slide-left {
   opacity: 1;
-  animation-name: slideInWeb;
+  animation-name: slideInWebLeft;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.web-img-active-slide-right {
+  opacity: 1;
+  animation-name: slideInWebRight;
   animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
 
@@ -370,6 +436,7 @@
   .img-slider {
     width: 100% !important;
     height: 100% !important;
+    border-radius: 10px !important;
     align-content: center;
     position: static;
   }

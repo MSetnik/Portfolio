@@ -5,6 +5,7 @@ class WebSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      imageCssClass: 'web-img-active-slide-right',
       properties: props.images,
       property: props.images[0],
       index: 0,
@@ -13,6 +14,9 @@ class WebSlider extends Component {
     this.prevImg = this.prevImg.bind(this);
   }
   nextImg() {
+    this.setState({
+      imageCssClass: 'web-img-active-slide-right'
+    })
     const newIndex =
       this.state.properties.length <= this.state.index + 1
         ? 0
@@ -24,6 +28,9 @@ class WebSlider extends Component {
   }
 
   prevImg() {
+    this.setState({
+      imageCssClass: 'web-img-active-slide-left'
+    })
     const newIndex =
       0 <= this.state.index - 1
         ? this.state.index - 1
@@ -56,7 +63,7 @@ class WebSlider extends Component {
               return (
                 <div
                   className={
-                    index === this.state.index ? "web-img-active" : "web-img"
+                    index === this.state.index ? this.state.imageCssClass : "web-img"
                   }
                 >
                   <img
