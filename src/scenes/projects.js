@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Tab,
   Tabs,
@@ -10,66 +10,57 @@ import {
   Button,
   CardText,
 } from "react-mdl";
-import Slider from "./imageSlider";
-import WebSlider from "./webSlider";
-import data from "./assets/images.js";
+import Slider from "../components/organisms/imageSlider";
+import WebSlider from "../components/organisms/webSlider";
+import data from "../assets/images.js";
 
-
-class Projects extends Component {
-  androidImages = [
+const Projects = () => {
+  const [androidImages, setAndroidImages] = useState([
     {
       cim: null,
       vsmti: null,
       res: null,
     },
-  ];
+  ]);
 
-  webImages = [
+  const [webImages, setWebImages] = useState([
     {
       hoteli: null,
       skladiste: null,
     },
-  ];
+  ]);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeTab: 0,
-      show: false,
-      selectedImages: [],
-    };
+  const [activeTab, setActiveTab] = useState(0);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
-    // this.loadImages = this.loadImages.bind(this);
-    // this.loadImages();
-    this.loadImages();
-  }
-
-  loadImages() {
+  useEffect(() => {
     data.forEach((element) => {
       element.Mobile.forEach((element) => {
-        this.androidImages = [
+        setAndroidImages([
           {
             cim: element.cim,
             vsmti: element.vsmtiInfo,
             res: element.restoraniValpova,
             todo: element.RNTodo,
           },
-        ];
+        ]);
       });
 
       element.Web.forEach((element) => {
-        this.webImages = [
+        setWebImages([
           {
             hoteli: element.hoteli,
             skladiste: element.skladiste,
           },
-        ];
+        ]);
       });
     });
-  }
 
-  toggleCategories() {
-    if (this.state.activeTab === 0) {
+    setDataLoaded(true);
+  }, []);
+
+  const toggleCategories = () => {
+    if (activeTab === 0) {
       return (
         <div>
           {/* project 1 */}
@@ -109,7 +100,7 @@ class Projects extends Component {
                   </CardTitle>
 
                   <Grid className="card-mobile-grid">
-                    <Cell col={6} className='project-info-cell'>
+                    <Cell col={6} className="project-info-cell">
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>
                           City Infrastructure Manager
@@ -126,7 +117,7 @@ class Projects extends Component {
                     </Cell>
                     <Cell col={6} className="slider-mobile-cell">
                       <div>
-                        <Slider images={this.androidImages[0].cim}></Slider>
+                        <Slider images={androidImages[0].cim}></Slider>
                       </div>
                     </Cell>
                   </Grid>
@@ -137,6 +128,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/CityInfrastructureManager"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -185,7 +177,7 @@ class Projects extends Component {
                   <Grid className="card-mobile-grid">
                     <Cell className="slider-mobile-cell" col={6}>
                       <div className="slider">
-                        <Slider images={this.androidImages[0].vsmti}></Slider>
+                        <Slider images={androidImages[0].vsmti}></Slider>
                       </div>
                     </Cell>
                     <Cell col={6}>
@@ -214,6 +206,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/VSMTINews"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -276,7 +269,7 @@ class Projects extends Component {
                     </Cell>
                     <Cell col={6} className="slider-mobile-cell">
                       <div>
-                        <Slider images={this.androidImages[0].res}></Slider>
+                        <Slider images={androidImages[0].res}></Slider>
                       </div>
                     </Cell>
                   </Grid>
@@ -287,6 +280,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/FoodApp"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -335,7 +329,7 @@ class Projects extends Component {
                   <Grid className="card-mobile-grid">
                     <Cell col={6} id="rn-slider" className="slider-mobile-cell">
                       <div>
-                        <Slider images={this.androidImages[0].todo}></Slider>
+                        <Slider images={androidImages[0].todo}></Slider>
                       </div>
                     </Cell>
                     <Cell col={6} id="rn-text">
@@ -364,6 +358,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/RNTodoApp-using-cli"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -374,7 +369,7 @@ class Projects extends Component {
           </div>
         </div>
       );
-    } else if (this.state.activeTab === 1) {
+    } else if (activeTab === 1) {
       return (
         <div>
           {/* project 1 */}
@@ -421,7 +416,7 @@ class Projects extends Component {
                   </CardText>
 
                   <div>
-                    <WebSlider images={this.webImages[0].skladiste}></WebSlider>
+                    <WebSlider images={webImages[0].skladiste}></WebSlider>
                   </div>
                 </div>
 
@@ -430,6 +425,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/UpravljanjeSkladistem"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -483,7 +479,7 @@ class Projects extends Component {
                   </CardText>
 
                   <div>
-                    <WebSlider images={this.webImages[0].hoteli}></WebSlider>
+                    <WebSlider images={webImages[0].hoteli}></WebSlider>
                   </div>
                 </div>
 
@@ -492,6 +488,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/AdministracijaHotela"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -546,6 +543,7 @@ class Projects extends Component {
                     <a
                       href="https://github.com/MSetnik/Portfolio"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Github
                     </a>
@@ -557,30 +555,30 @@ class Projects extends Component {
         </div>
       );
     }
-  }
+  };
 
-  render() {
-    return (
-      <div className="category-tabs">
-        <div style={{ position: "relative" }}>
-          <Tabs
-            activeTab={this.state.activeTab}
-            onChange={(tabId) => this.setState({ activeTab: tabId })}
-            ripple
-          >
-            <Tab>Mobile</Tab>
-            <Tab>Web</Tab>
-          </Tabs>
+  return (
+    <div className="category-tabs">
+      <div style={{ position: "relative" }}>
+        <Tabs
+          activeTab={activeTab}
+          onChange={(tabId) => setActiveTab(tabId)}
+          ripple
+        >
+          <Tab>Mobile</Tab>
+          <Tab>Web</Tab>
+        </Tabs>
 
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </div>
+        <Grid>
+          <Cell col={12}>
+            {dataLoaded === true && (
+              <div className="content">{toggleCategories()}</div>
+            )}
+          </Cell>
+        </Grid>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Projects;

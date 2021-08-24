@@ -35,8 +35,6 @@
   }
 }
 
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -45,9 +43,6 @@
     opacity: 1;
   }
 }
-
-
-
 
 .page-content {
   width: 100%;
@@ -68,7 +63,6 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 .main-container {
   background: #16222a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -81,7 +75,7 @@
     #3a6073,
     #16222a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* 
+  /* 
   display: flex;
   text-align: center; */
 
@@ -90,7 +84,7 @@
   padding-bottom: 10px;
 }
 
-.main-container{
+.main-container {
   background-color: red;
   height: 100%;
   padding-bottom: 10px;
@@ -289,7 +283,6 @@
   object-position: 50% 50%;
 }
 
-
 .img-active-slide-right {
   opacity: 1;
   animation-name: slideInRight;
@@ -400,6 +393,7 @@
   height: 50rem;
 }
 
+
 @media screen and (max-width: 65em) {
   .single-card div {
     justify-content: center !important;
@@ -499,20 +493,19 @@
 
   .landing-grid {
     height: 100%;
-
   }
 
   .banner-text {
     width: 75%;
   }
 
-  .main-container{
+  .main-container {
     height: 100%;
   }
 }
 
 @media screen and (max-width: 20em) {
-  .main-container{
+  .main-container {
     height: auto;
   }
 }
