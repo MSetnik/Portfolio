@@ -103,12 +103,7 @@ const Projects = () => {
                   </CardTitle>
 
                   <Grid className="card-mobile-grid">
-                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
-                      <div>
-                        <Slider images={androidImages[0].notes}></Slider>
-                      </div>
-                    </Cell>
-                    <Cell col={6} id="rn-text">
+                  <Cell col={6} id="rn-text">
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Notes</h4>
                         <p>
@@ -121,6 +116,11 @@ const Projects = () => {
                           <i>U daljnjem razvoju ..</i>                        
                         </p>
                       </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].notes}></Slider>
+                      </div>
                     </Cell>
                   </Grid>
                 </div>
