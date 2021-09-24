@@ -27,15 +27,14 @@ const Contact = () => {
               <ListItem>
                 <ListItemContent
                   className="contact-content"
-                  style={{ fontSize: "30px", fontFamily: "Anton"}}
+                  style={{ fontSize: "30px", fontFamily: "Anton" }}
                 >
 
                   <i className="fa fa-phone-square" aria-hidden="true"></i>
 
                   Na upit
-                  
 
-                  </ListItemContent>
+                </ListItemContent>
               </ListItem>
 
               <ListItem>
@@ -53,7 +52,6 @@ const Contact = () => {
       </Grid>
     </div>
   );
-}
-
+};
 
 export default Contact;
