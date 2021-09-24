@@ -8,8 +8,8 @@ const config = {
   storageBucket: "portfolio-dbe68.appspot.com",
   messagingSenderId: "915927296347",
   appId: "1:915927296347:web:93d72ef05043eadda3d27e",
-  measurementId: "G-19BNGRM5TY",
+  measurementId: "G-19BNGRM5TY"
 };
 
-var fire = firebase.initializeApp(config);
+const fire = firebase.initializeApp(config);
 export default fire;

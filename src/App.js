@@ -9,19 +9,17 @@ const App = () => {
   const hideToggle = () => {
     const selectorID = document.querySelector(".mdl-layout");
     selectorID.MaterialLayout.toggleDrawer();
-  }
+  };
 
   const handleResponse = async () => {
-    var visitorsCount;
-    var newVisitors;
     const eventref = fire.database().ref("visitors");
     const snapshot = await eventref.once("value");
     const value = snapshot.val();
 
-    visitorsCount = value.visitors_count;
+    const visitorsCount = value.visitors_count;
 
-    newVisitors = {
-      visitors_count: visitorsCount + 1,
+    const newVisitors = {
+      visitors_count: visitorsCount + 1
     };
 
     if (newVisitors != null) {
@@ -34,7 +32,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    handleResponse()
+    handleResponse();
   });
 
   return (
@@ -70,6 +68,6 @@ const App = () => {
       </Layout>
     </div>
   );
-}
+};
 
 export default App;

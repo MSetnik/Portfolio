@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Grid, Cell } from "react-mdl";
 import Education from "../components/molecules/education";
 import Experience from "../components/molecules/experience";
