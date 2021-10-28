@@ -359,7 +359,6 @@
   position: absolute;
   z-index: 2;
   text-align: center;
-  /* background-color: rgba(63,61,61,0.692); */
 }
 
 .card-mobile-grid {
@@ -393,6 +392,54 @@
   height: 50rem;
 }
 
+
+.contact-list {
+  width: 60%;
+  margin: auto;
+}
+
+
+.contact-div {
+  margin-top: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-input-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.input-name, .input-email, .input-message {
+  border-width: 0px;
+  border-bottom-width: 1px;
+  margin-top: 20px;
+  font-size: 15px;
+
+}
+
+.input-name:focus, .input-email:focus, .input-message:focus {
+  outline: none;
+  border-bottom-color:#ffc300;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  width: 40%;
+  background: #ffc300; 
+  border-radius: 10px;
+  padding: 5px 5px;
+  border-width: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 @media screen and (max-width: 65em) {
   .single-card div {
@@ -502,10 +549,25 @@
   .main-container {
     height: 100%;
   }
+
+  .contact-list {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 20em) {
   .main-container {
     height: auto;
+  }
+
+  .contact-btn {
+    width: 60%;
+  }
+
+
+  .contact-list {
+    width: 90%;
+    margin: auto;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import ContactForm from "../components/organisms/contact-form";
 
 const Contact = () => {
   return (
@@ -23,31 +24,7 @@ const Contact = () => {
           <hr />
 
           <div className="contact-list">
-            <List>
-              <ListItem>
-                <ListItemContent
-                  className="contact-content"
-                  style={{ fontSize: "30px", fontFamily: "Anton"}}
-                >
-
-                  <i className="fa fa-phone-square" aria-hidden="true"></i>
-
-                  Na upit
-                  
-
-                  </ListItemContent>
-              </ListItem>
-
-              <ListItem>
-                <ListItemContent
-                  className="contact-content"
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
-                >
-                  <i className="fa fa-envelope" aria-hidden="true"></i>
-                  setnik99@gmail.com
-                </ListItemContent>
-              </ListItem>
-            </List>
+            <ContactForm />
           </div>
         </Cell>
       </Grid>
