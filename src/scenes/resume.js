@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { Grid, Cell } from "react-mdl";
 import Education from "../components/molecules/education";
 import Experience from "../components/molecules/experience";
 import Skills from "../components/molecules/skills";
+import { localization } from "../localization";
 
 const Resume = () => {
   return (
@@ -18,19 +19,17 @@ const Resume = () => {
           </div>
 
           <h2 style={{ paddingTop: "1em" }}>Matko Setnik</h2>
-          <h4 style={{ color: "grey" }}>Frontend mobile developer</h4>
+          <h4 style={{ color: "grey" }}>{localization.specialization}</h4>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           <p>
-            Moje ime je Matko Setnik, dolazim iz Valpova, <br />
-            te sam završio preddiplomski stručni studij Računarstva, smjera
-            Programsko inženjerstvo u Virovitici.
+           {localization.aboutMe}
           </p>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-          <h5>Adresa</h5>
-          <p>Valpovo, Hrvatska</p>
-          <h5>Telefon</h5>
-          <p>Na upit</p>
-          <h5>Email</h5>
+          <h5>{localization.addressTitle}</h5>
+          <p>{localization.address}</p>
+          <h5>{localization.phoneTitle}</h5>
+          <p>{localization.phone}</p>
+          <h5>{localization.email}</h5>
           <p>setnik99@gmail.com</p>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
         </Cell>
@@ -41,7 +40,7 @@ const Resume = () => {
           <Education
             startYear="09/2013"
             endYear="05/2017"
-            schoolName="SŠ Valpovo, Komercijalist"
+            schoolName={localization.highschool}
             schoolDescription="dr. Franje Tuđmana 2, 31550 Valpovo"
             schoolWeb="www.ss-valpovo.hr"
           />
@@ -49,19 +48,19 @@ const Resume = () => {
           <Education
             startYear="10/2017"
             endYear="9/2020"
-            schoolName="VSMTI, Računarstvo"
+            schoolName={localization.college}
             schoolDescription="Matije Gupca 78, 33000 Virovitica"
             schoolWeb="www.vsmti.hr"
           />
 
           <hr style={{ borderTop: "3px solid #e22947" }} />
 
-          <h2>Iskustvo</h2>
+          <h2>{localization.expirience}</h2>
 
           <Experience
             startYear={2016}
             endYear={2019}
-            jobName="Pomoćni djelatnik za izdavanje pića na festivalu na otvorenom"
+            jobName={localization.jobServer}
             jobDescription="posluživanje gostiju, čišćenje objekta, postavljanje festivalskih šatora"
             companyName="Gasthaus-pension Krone Kleinheppach"
             jobPlace="Kelterstr. 1, 71404 Kleinheppach, Njemačka"

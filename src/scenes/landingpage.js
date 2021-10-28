@@ -1,6 +1,8 @@
 import React from "react";
+import { localization } from "../localization";
 
 const LandingPage = () => {
+
   return (
     <div className="main-container">
       <div style={{ textAlign: "center" }}>
@@ -13,11 +15,11 @@ const LandingPage = () => {
 
       <div className="banner-text">
         <h1>Matko Setnik</h1>
-        <h4 style={{ color: "white" }}>bacc. ing. comp.</h4>
+        <h4 style={{ color: "white" }}>{localization.educationTitle}</h4>
 
         <hr />
 
-        <p> Frontend mobile developer </p>
+        <p>{localization.specialization}</p>
 
         <div className="social-links">
           <a
