@@ -30,7 +30,6 @@ const Contact = () => {
       </Grid>
     </div>
   );
-}
-
+};
 
 export default Contact;
