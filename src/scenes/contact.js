@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import { Grid, Cell } from "react-mdl";
 import ContactForm from "../components/organisms/contact-form";
 
 const Contact = () => {

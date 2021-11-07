@@ -1,45 +1,44 @@
 import React from "react";
-import { localization } from "../localization";
 
 const LandingPage = () => {
 
   return (
     <div className="main-container">
-      <div style={{ textAlign: "center" }}>
-        <img
-          src="https://icon-library.com/images/avatar-icon/avatar-icon-4.jpg"
-          alt="avatar"
-          className="avatar-img"
-        />
-      </div>
+    <div style={{ textAlign: "center" }}>
+      <img
+        src="https://icon-library.com/images/avatar-icon/avatar-icon-4.jpg"
+        alt="avatar"
+        className="avatar-img"
+      />
+    </div>
 
-      <div className="banner-text">
-        <h1>Matko Setnik</h1>
-        <h4 style={{ color: "white" }}>{localization.educationTitle}</h4>
+    <div className="banner-text">
+      <h1>Matko Setnik</h1>
+      <h4 style={{ color: "white" }}>bacc. ing. comp.</h4>
 
-        <hr />
+      <hr />
 
-        <p>{localization.specialization}</p>
+      <p> Frontend mobile developer </p>
 
-        <div className="social-links">
-          <a
-            href="https://github.com/MSetnik"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-github-square" aria-hidden="true"></i>
-          </a>
+      <div className="social-links">
+        <a
+          href="https://github.com/MSetnik"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-github-square" aria-hidden="true"></i>
+        </a>
 
-          <a
-            href="https://www.linkedin.com/in/matko-setnik-2b8a491aa/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </div>
+        <a
+          href="https://www.linkedin.com/in/matko-setnik-2b8a491aa/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
+  </div>
   );
 };
 
