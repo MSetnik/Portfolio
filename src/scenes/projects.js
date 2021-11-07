@@ -107,7 +107,7 @@ const Projects = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Notes</h4>
                         <p>
-                          Aplikacija za vođenje bilježaka napravljena radi vlastite potrebe, temeljem
+                          Aplikacija za vođenje bilješki napravljena radi vlastite potrebe, temeljem
                           dizajna sa <a href="https://dribbble.com/shots/11875872-A-simple-and-lightweight-note-app">Dribble-a.</a> Buildana je pomoću Expo frameworka te je prilagođena i testirana 
                           na obje platforme. Podatci se spremaju u lokalni Async storage. 
                           Aplikacija sadrži dvojezičnost (Hrvatski i Engleski) te se prilagođava 
