@@ -23,7 +23,10 @@ const Resume = () => {
         <p>
           Moje ime je Matko Setnik, dolazim iz Valpova, <br />
           te sam završio preddiplomski stručni studij Računarstva, smjera
-          Programsko inženjerstvo u Virovitici.
+          Programsko inženjerstvo u Virovitici. <br />
+          Radim kao mlađi specijalist u službi razvoja aplikativnih rješenja u mStart plus d.o.o. <br /> 
+          na poziciji React Native developera. <br />
+          Glavno područje interesa su mi mobilne aplikacije.
         </p>
         <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
         <h5>Adresa</h5>
