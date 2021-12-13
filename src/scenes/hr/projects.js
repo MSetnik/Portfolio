@@ -10,9 +10,9 @@ import {
   Button,
   CardText
 } from "react-mdl";
-import Slider from "../components/organisms/imageSlider";
-import WebSlider from "../components/organisms/webSlider";
-import data from "../assets/images.js";
+import Slider from "../../components/organisms/imageSlider";
+import WebSlider from "../../components/organisms/webSlider";
+import data from "../../assets/images.js";
 
 const Projects = () => {
   const [androidImages, setAndroidImages] = useState([

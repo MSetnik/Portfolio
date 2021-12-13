@@ -44,6 +44,20 @@
   }
 }
 
+.drawer-divider{
+  border-bottom: '4px solid red';
+  height: 1px
+}
+
+.langImg {
+  background-image: url('./assets/hr.png');
+  background-size: cover;
+}
+
+.mdl-navigation__link div:hover {
+  background-color: "#FFF";
+}
+
 .page-content {
   width: 100%;
   height: 100%;

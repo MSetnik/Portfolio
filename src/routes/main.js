@@ -1,9 +1,17 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import LandingPage from "../scenes/landingpage";
-import Contact from "../scenes/contact";
-import Projects from "../scenes/projects";
-import Resume from "../scenes/resume";
+
+//hr
+import LandingPage from "../scenes/hr/landingpage";
+import Contact from "../scenes/hr/contact";
+import Projects from "../scenes/hr/projects";
+import Resume from "../scenes/hr/resume";
+
+// eng
+import LandingPageEn from "../scenes/en/landingpage";
+import ContactEn from "../scenes/en/contact";
+import ProjectsEn from "../scenes/en/projects";
+import ResumeEn from "../scenes/en/resume";
 
 const Main = () => (
   <Switch>
@@ -11,6 +19,11 @@ const Main = () => (
     <Route path="/contact" component={Contact} />
     <Route path="/projects" component={Projects} />
     <Route path="/resume" component={Resume} />
+
+    <Route exact path="/en/" component={LandingPageEn} />
+    <Route path="/en/contact" component={ContactEn} />
+    <Route path="/en/projects" component={ProjectsEn} />
+    <Route path="/en/resume" component={ResumeEn} />
   </Switch>
 );
 

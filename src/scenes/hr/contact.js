@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
-import ContactForm from "../components/organisms/contact-form";
+import ContactForm from "../../components/organisms/contact-form";
 
 const Contact = () => {
   return (
@@ -22,11 +22,12 @@ const Contact = () => {
         <Cell className="contact-cell" col={6}>
           <h2>Kontakt</h2>
           <hr />
-
+         
           <div className="contact-list">
             <ContactForm />
           </div>
         </Cell>
+
       </Grid>
     </div>
   );
