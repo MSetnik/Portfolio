@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
-import Education from "../components/molecules/education";
-import Experience from "../components/molecules/experience";
-import Skills from "../components/molecules/skills";
-import { localization } from "../localization";
+import Education from "../../components/molecules/education";
+import Experience from "../../components/molecules/experience";
+import Skills from "../../components/molecules/skills";
+import { localization } from "../../localization";
 
-const Resume = () => {
+const ResumeEn = () => {
   return (
     <div>
       <Grid>
@@ -19,28 +19,31 @@ const Resume = () => {
           </div>
 
           <h2 style={{ paddingTop: "1em" }}>Matko Setnik</h2>
-          <h4 style={{ color: "grey" }}>{localization.specialization}</h4>
+          <h4 style={{ color: "grey" }}>Frontend mobile developer</h4>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           <p>
-           {localization.aboutMe}
+            My name is Matko Setnik and I completed my undergraduate professional study <br/> of Computer Science, 
+            majoring in Software Engineering in Virovitica. <br/>
+            Im currently working as a React Native developer at mStart plus d.o.o. in Zagreb, Croatia. <br/>
+            My main interest are mobile applications.
           </p>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-          <h5>{localization.addressTitle}</h5>
-          <p>{localization.address}</p>
-          <h5>{localization.phoneTitle}</h5>
-          <p>{localization.phone}</p>
-          <h5>{localization.email}</h5>
+          <h5>Address</h5>
+          <p>Valpovo, Croatia</p>
+          <h5>Phone</h5>
+          <p>On request</p>
+          <h5>Email</h5>
           <p>setnik99@gmail.com</p>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
         </Cell>
 
         <Cell className="resume-right-col" col={6}>
-          <h2>Obrazovanje</h2>
+          <h2>Education</h2>
 
           <Education
             startYear="09/2013"
             endYear="05/2017"
-            schoolName={localization.highschool}
+            schoolName='SŠ Valpovo, Commercialist'
             schoolDescription="dr. Franje Tuđmana 2, 31550 Valpovo"
             schoolWeb="www.ss-valpovo.hr"
           />
@@ -48,29 +51,29 @@ const Resume = () => {
           <Education
             startYear="10/2017"
             endYear="9/2020"
-            schoolName={localization.college}
+            schoolName='VSMTI, Computer Science'
             schoolDescription="Matije Gupca 78, 33000 Virovitica"
             schoolWeb="www.vsmti.hr"
           />
 
           <hr style={{ borderTop: "3px solid #e22947" }} />
 
-          <h2>{localization.expirience}</h2>
+          <h2>Expirience</h2>
 
           <Experience
             startYear={2016}
             endYear={2019}
-            jobName={localization.jobServer}
-            jobDescription="posluživanje gostiju, čišćenje objekta, postavljanje festivalskih šatora"
+            jobName='Assistant for drinks at the open-air festival'
+            jobDescription="serving guests, cleaning, setting up tents"
             companyName="Gasthaus-pension Krone Kleinheppach"
-            jobPlace="Kelterstr. 1, 71404 Kleinheppach, Njemačka"
+            jobPlace="Kelterstr. 1, 71404 Kleinheppach, Germany"
           />
 
           <Experience
             startYear="10/07/2020"
             endYear="04/09/2020"
-            jobName="Stručna praksa (Android)"
-            jobDescription="Kreiranje aplikacije za prikaz informacija o fakultetu"
+            jobName="Internship (Android)"
+            jobDescription="Creating simple mobile app with information about College"
             companyName="VSMTI"
             jobPlace="Matije Gupca 78, Virovitica"
           />
@@ -78,7 +81,7 @@ const Resume = () => {
           <Experience
             startYear="25/01/2021"
             endYear="01/07/2021"
-            jobName="Pripravnik u Službi razvoja aplikativnih rješenja"
+            jobName="Intern"
             jobDescription="Frontend mobile developer - React Native"
             companyName="mStart plus d.o.o."
             jobPlace="Slavonska avenija 11a, Zagreb"
@@ -87,7 +90,7 @@ const Resume = () => {
           <Experience
             startYear="01/07/2021"
             endYear="Danas"
-            jobName="Mlađi Specijalist u Službi razvoja aplikativnih rješenja"
+            jobName="Junior software specialist"
             jobDescription="Frontend mobile developer - React Native"
             companyName="mStart plus d.o.o."
             jobPlace="Slavonska avenija 11a, Zagreb"
@@ -95,7 +98,7 @@ const Resume = () => {
 
           <hr style={{ borderTop: "3px solid #e22947" }} />
 
-          <h2>Vještine</h2>
+          <h2>Skills</h2>
 
           <Skills skill="React Native" progress={50} />
 
@@ -116,4 +119,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumeEn;

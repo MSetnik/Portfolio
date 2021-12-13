@@ -10,11 +10,11 @@ import {
   Button,
   CardText,
 } from "react-mdl";
-import Slider from "../components/organisms/imageSlider";
-import WebSlider from "../components/organisms/webSlider";
-import data from "../assets/images.js";
+import Slider from "../../components/organisms/imageSlider";
+import WebSlider from "../../components/organisms/webSlider";
+import data from "../../assets/images.js";
 
-const Projects = () => {
+const ProjectsEn = () => {
   const [androidImages, setAndroidImages] = useState([
     {
       cim: null,
@@ -63,235 +63,8 @@ const Projects = () => {
     if (activeTab === 0) {
       return (
         <div>
-          {/* project 1 */}
-          <div
-            className="single-project-grid"
-            style={{
-              marginTop: "20px",
-            }}
-          >
-            <div style={{ padding: "20px", display: "flex", height: "100%" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
-                <div style={{ display: "inline-block" }}>
-                  <CardTitle
-                    className="project-title"
-                    style={{
-                      backgroundColor: "white",
-                      height: "220px",
-                      width: "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      className="android-img"
-                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
-                      style={{
-                        height: "220px",
-                        width: "auto",
-                      }}
-                    />
-                  </CardTitle>
-
-                  <Grid className="card-mobile-grid">
-                    <Cell col={6} className="project-info-cell">
-                      <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>
-                          City Infrastructure Manager
-                        </h4>
-                        <p>
-                          Sustav City infrastructure manager ima zadaću
-                          evidentirati infrastrukturne ispade na području
-                          određenog grada, kako bi građani imali te informacije
-                          dostupne javno. Evidentiraju se sljedeće vrste ispada:
-                          nestanak električne energije, nestanak plina, nestanak
-                          vode, prekid prometa određeno relacijom.
-                        </p>
-                      </CardText>
-                    </Cell>
-                    <Cell col={6} className="slider-mobile-cell">
-                      <div>
-                        <Slider images={androidImages[0].cim}></Slider>
-                      </div>
-                    </Cell>
-                  </Grid>
-                </div>
-
-                <CardActions border className="project-card-action">
-                  <Button colored>
-                    <a
-                      href="https://github.com/MSetnik/CityInfrastructureManager"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Github
-                    </a>
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </div>
-
-          {/* project 2 */}
-          <div
-            className="single-project-grid"
-            style={{
-              marginTop: "20px",
-            }}
-          >
-            <div style={{ padding: "20px" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
-                <div style={{ display: "inline-block" }}>
-                  <CardTitle
-                    className="project-title"
-                    style={{
-                      backgroundColor: "white",
-                      height: "220px",
-                      width: "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      className="android-img"
-                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
-                      style={{
-                        height: "220px",
-                        width: "auto",
-                      }}
-                    />
-                  </CardTitle>
-
-                  <Grid className="card-mobile-grid">
-                    <Cell className="slider-mobile-cell" col={6}>
-                      <div className="slider">
-                        <Slider images={androidImages[0].vsmti}></Slider>
-                      </div>
-                    </Cell>
-                    <Cell col={6}>
-                      <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>VSMTI Info</h4>
-                        <p>
-                          Aplikacija sadrži funkcionalnost parsiranja vijesti sa
-                          stranice fakulteta te prikaz detaljnijeg opisa vijesti
-                          odabirom na nju. Glavni activity sadrži korisne
-                          linkove te prikaz vijest, prikaz studijskih programa
-                          koje fakultet nudi koji se dohvaćaju sa servera,
-                          prikaz dokumenta (također na serveru), kontakt
-                          informacije fakulteta te otvaranje web stranice sa 360
-                          prikazom školskog prostora. Osim toga, aplikacija ima
-                          mogućnost prikaza push obavijesti koje su također
-                          spremljene na serveru. Za dohvaćanje podataka sa
-                          servera je korišten Retrofit.
-                        </p>
-                      </CardText>
-                    </Cell>
-                  </Grid>
-                </div>
-
-                <CardActions className="project-card-action" border>
-                  <Button colored>
-                    <a
-                      href="https://github.com/MSetnik/VSMTINews"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Github
-                    </a>
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </div>
-
-          {/* project 3 */}
-          <div
-            className="single-project-grid"
-            style={{
-              marginTop: "20px",
-            }}
-          >
-            <div style={{ padding: "20px" }}>
-              <Card
-                className="single-card"
-                shadow={5}
-                style={{
-                  display: "flex",
-                  width: "100%",
-                }}
-              >
-                <div style={{ display: "inline-block" }}>
-                  <CardTitle
-                    className="project-title"
-                    style={{
-                      backgroundColor: "white",
-                      height: "220px",
-                      width: "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      className="android-img"
-                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
-                      style={{
-                        height: "220px",
-                        width: "auto",
-                      }}
-                    />
-                  </CardTitle>
-
-                  <Grid className="card-mobile-grid">
-                    <Cell col={6}>
-                      <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>
-                          Restorani Valpova
-                        </h4>
-                        <p>
-                          Aplikacija prikazuje Restorane grada Valpova (2) sa
-                          prikazanim testnim podatcima. Podatci su spremljeni u
-                          lokalnu bazu pomoću Room library-a. Korisnik može
-                          dodati jelo u wishlistu, te ga maknuti sa wishliste.
-                          Također korisnik može pregledati jela u wishlisti.
-                        </p>
-                      </CardText>
-                    </Cell>
-                    <Cell col={6} className="slider-mobile-cell">
-                      <div>
-                        <Slider images={androidImages[0].res}></Slider>
-                      </div>
-                    </Cell>
-                  </Grid>
-                </div>
-
-                <CardActions border className="project-card-action">
-                  <Button colored>
-                    <a
-                      href="https://github.com/MSetnik/FoodApp"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Github
-                    </a>
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </div>
-
-          {/* project 4 */}
-          <div
+{/* project 4 */}
+<div
             className="single-project-grid"
             style={{
               marginTop: "20px",
@@ -367,6 +140,228 @@ const Projects = () => {
               </Card>
             </div>
           </div>
+
+          {/* project 1 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            <div style={{ padding: "20px", display: "flex", height: "100%" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%",
+                }}
+              >
+                <div style={{ display: "inline-block" }}>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "white",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      className="android-img"
+                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
+                      style={{
+                        height: "220px",
+                        width: "auto",
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} className="project-info-cell">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>
+                          City Infrastructure Manager
+                        </h4>
+                        <p>
+                          City infrastructure manager shows outages from city network
+                          and shows them in the app so citizens have the information publicly
+                          availible. App shows electricity, gas, water and transport outages based
+                          on the city. App is connected to the backend and the admin office.
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].cim}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+
+                <CardActions border className="project-card-action">
+                  <Button colored>
+                    <a
+                      href="https://github.com/MSetnik/CityInfrastructureManager"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </div>
+          </div>
+
+          {/* project 2 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%",
+                }}
+              >
+                <div style={{ display: "inline-block" }}>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "white",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      className="android-img"
+                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
+                      style={{
+                        height: "220px",
+                        width: "auto",
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell className="slider-mobile-cell" col={6}>
+                      <div className="slider">
+                        <Slider images={androidImages[0].vsmti}></Slider>
+                      </div>
+                    </Cell>
+                    <Cell col={6}>
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>VSMTI Info</h4>
+                        <p>
+                          App shows latest College news which are parsed from College website.
+                          Main activity is a navigation that shows usefull links for the students,
+                          news, college programs that are offered which are fetched from server,
+                          documents and ability to download them from server, 360 view of the 
+                          College facility, and contact information. There is also functionality 
+                          for recieving notifications. 
+                          For data fetching is used Retrofit.
+                        </p>
+                      </CardText>
+                    </Cell>
+                  </Grid>
+                </div>
+
+                <CardActions className="project-card-action" border>
+                  <Button colored>
+                    <a
+                      href="https://github.com/MSetnik/VSMTINews"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </div>
+          </div>
+
+          {/* project 3 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%",
+                }}
+              >
+                <div style={{ display: "inline-block" }}>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "white",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      className="android-img"
+                      src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA"
+                      style={{
+                        height: "220px",
+                        width: "auto",
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6}>
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>
+                          Restorani Valpova
+                        </h4>
+                        <p>
+                          App shows Restaurants of Valpovo city and nearby area
+                          with dummy data. Data is stored in local database using Room lib.
+                          User can add and remove meal in whishlist so he can have clear
+                          view what to order
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].res}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+
+                <CardActions border className="project-card-action">
+                  <Button colored>
+                    <a
+                      href="https://github.com/MSetnik/FoodApp"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </div>
+          </div>
+
+          
         </div>
       );
     } else if (activeTab === 1) {
@@ -581,4 +576,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsEn;

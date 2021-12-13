@@ -1,7 +1,7 @@
 import React from "react";
-import { localization } from "../localization";
+import { localization } from "../../localization";
 
-const LandingPage = () => {
+const LandingPageEn = () => {
 
   return (
     <div className="main-container">
@@ -43,4 +43,4 @@ const LandingPage = () => {
   );
 }
 
-export default LandingPage;
+export default LandingPageEn;
