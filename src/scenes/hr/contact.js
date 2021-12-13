@@ -21,7 +21,7 @@ const Contact = () => {
         <Cell className="contact-cell" col={6}>
           <h2>Kontakt</h2>
           <hr />
-
+         
           <div className="contact-list">
             <List>
               <ListItem>
@@ -50,6 +50,7 @@ const Contact = () => {
             </List>
           </div>
         </Cell>
+
       </Grid>
     </div>
   );

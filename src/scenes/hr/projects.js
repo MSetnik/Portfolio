@@ -20,14 +20,15 @@ const Projects = () => {
       cim: null,
       vsmti: null,
       res: null,
-    },
+      notes: null
+    }
   ]);
 
   const [webImages, setWebImages] = useState([
     {
       hoteli: null,
-      skladiste: null,
-    },
+      skladiste: null
+    }
   ]);
 
   const [activeTab, setActiveTab] = useState(0);
@@ -42,7 +43,8 @@ const Projects = () => {
             vsmti: element.vsmtiInfo,
             res: element.restoraniValpova,
             todo: element.RNTodo,
-          },
+            notes: element.Notes
+          }
         ]);
       });
 
@@ -50,8 +52,8 @@ const Projects = () => {
         setWebImages([
           {
             hoteli: element.hoteli,
-            skladiste: element.skladiste,
-          },
+            skladiste: element.skladiste
+          }
         ]);
       });
     });
@@ -59,7 +61,6 @@ const Projects = () => {
     setDataLoaded(true);
   }, []);
 
-  
   const toggleCategories = () => {
     if (activeTab === 0) {
       return (

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from "react";
 import {
   Tab,
@@ -20,14 +21,15 @@ const ProjectsEn = () => {
       cim: null,
       vsmti: null,
       res: null,
-    },
+      notes: null
+    }
   ]);
 
   const [webImages, setWebImages] = useState([
     {
       hoteli: null,
-      skladiste: null,
-    },
+      skladiste: null
+    }
   ]);
 
   const [activeTab, setActiveTab] = useState(0);
@@ -42,7 +44,8 @@ const ProjectsEn = () => {
             vsmti: element.vsmtiInfo,
             res: element.restoraniValpova,
             todo: element.RNTodo,
-          },
+            notes: element.Notes
+          }
         ]);
       });
 
@@ -50,8 +53,8 @@ const ProjectsEn = () => {
         setWebImages([
           {
             hoteli: element.hoteli,
-            skladiste: element.skladiste,
-          },
+            skladiste: element.skladiste
+          }
         ]);
       });
     });
@@ -63,8 +66,82 @@ const ProjectsEn = () => {
     if (activeTab === 0) {
       return (
         <div>
-{/* project 4 */}
-<div
+          {/* Project 1 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                  <Cell col={6} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>Notes</h4>
+                        <p>
+                          Note taking app made for my own needs, based on design from 
+                          <a href="https://dribbble.com/shots/11875872-A-simple-and-lightweight-note-app"> Dribble.</a> Buildt
+                          using Expo framework, customized and tested on both platforms (iOS and Android).
+                          Data is stored in local Async storage. App can be viewed in 2 languages (Croatian and English) using
+                          system laungage. There is implemented Dark Mode. First app published on <a href="https://play.google.com/store/apps/details?id=com.msetnik.NotesApp"> Play Store.</a> <br/>
+                          <i>In current development ..</i>                         
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].notes}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+
+                <CardActions border className="project-card-action">
+                  <Button colored>
+                    <a
+                      href="https://github.com/MSetnik/NotesApp"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </div>
+          </div>
+
+          {/* project 4 */}
+          <div
             className="single-project-grid"
             style={{
               marginTop: "20px",
@@ -109,17 +186,14 @@ const ProjectsEn = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Todo App</h4>
                         <p>
-                          Todo aplikacija napravljena koristeći React Native
-                          framework. Aplikacija sadrži 2 javna prikaza kojem
-                          mogu pristupiti anonimni korisnici (Login i
-                          Registracija) te su ostali screenovi privatni.
-                          Korisnik se može registrirati sa mailom te započeti
-                          korištenje aplikacije. Moguće je dodati zadatke,
-                          obrisati ih, urediti te označiti kao riješene. Zadatci
-                          su spremljeni na server putem Firebase firestore-a.
-                          Također je implementiran i firestore offline
-                          persistence kako bi korisnici bez problema mogli
-                          koristiti aplikaciju i bez pristupa internetu.
+                          Todo app made using React Native. App has 2 public screens 
+                          that can be accsessed by anonymous users (Login and Register). 
+                          Rest of the screens are privated. User can register using email and
+                          start using the app. 
+                          User can add and delete tasks, edit them or mark them as done.
+                          Tasks are stored on server using Firebase firestore. There 
+                          is also implemented firestore offline persistence so users dont 
+                          have problems using the app without internet access.
                         </p>
                       </CardText>
                     </Cell>
@@ -375,7 +449,7 @@ const ProjectsEn = () => {
             }}
           >
             <div style={{ padding: "20px" }}>
-              <Card className="single-card" shadow={5}>
+              <Card className="single-card" shadow={5} >
                 <div style={{ display: "inline-block" }}>
                   <CardTitle
                     id="skladiste-img"
@@ -401,12 +475,9 @@ const ProjectsEn = () => {
                       Upravljanje skladištem
                     </h4>
                     <p>
-                      Web aplikacija napravljena koristeći AngularJS framework i
-                      PHP jezik kao backend. Aplikacija služi za evidenciju
-                      dokumenata koji dolaze u skladište te evidenciju artikala
-                      u skladištu (primka, izdatnica i početno stanje).
-                      Aplikacija ima mogućnost administracije samo korisniku
-                      koji ima dopuštene ovlasti.
+                      Web app made with AngularJS framework, PHP and MySql database.
+                      App is used for record keeping of the documents/receipt and products in warehouse.
+                      There is restrictions for administration only for users that have permission.
                     </p>
                   </CardText>
 
@@ -461,15 +532,12 @@ const ProjectsEn = () => {
 
                   <CardText>
                     <h4 style={{ fontWeight: "bold" }}>
-                      Administracija hotela
+                      Hotel administration
                     </h4>
                     <p>
-                      Web aplikacija koja služi za administraciju hotela.
-                      Aplikacija ima mogućnost pregleda hotela na području
-                      Hrvatske te mogućnost dodavanja novih. Također je moguće
-                      rezervirati smještaj te pregledati kapacitet, odnosno
-                      popunjenost hotela. Hotele je moguće prikazati na google
-                      karti. Kao baza je korišten firebase.
+                      Web app for hotel administration. User can view and add hotels in Croatia. 
+                      Also, there is option for reserving hotel and view hotel capacity. Hotel can 
+                      be shown on the google map. As a database is used firebase.
                     </p>
                   </CardText>
 
@@ -525,10 +593,8 @@ const ProjectsEn = () => {
                   <CardText>
                     <h4 style={{ fontWeight: "bold" }}>Portfolio</h4>
                     <p>
-                      Web aplikacija napravljena koristeći React framework.
-                      Napravljena za učenje nove tehnologije te ujedno korištena
-                      i za prezentaciju znanja i vještina osobe. Aplikacija je
-                      hostana koristeći firebase.
+                      Web app made with React. Made for learning new technology and 
+                      for showing my skills and knowlege. App hosted with firebase.
                     </p>
                   </CardText>
                 </div>

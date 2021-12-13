@@ -15,11 +15,11 @@ const ContactEn = () => {
           />
 
           <p stlye={{ width: "75%", margin: "auto" }}>
-            Zainteresirani za suradnju? Kontaktirajte me!
+            In search for an app? Contact me!
           </p>
         </Cell>
         <Cell className="contact-cell" col={6}>
-          <h2>Kontakt</h2>
+          <h2>Contact</h2>
           <hr />
 
           <div className="contact-list">
