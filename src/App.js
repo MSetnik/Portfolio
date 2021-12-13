@@ -38,7 +38,7 @@ const App = () => {
 
   useEffect(() => {
     handleResponse();
-  });
+  }, []);
 
   useEffect(() => {
     setLoc(location.pathname.includes('/en') ? 'ENG' : 'HR');
