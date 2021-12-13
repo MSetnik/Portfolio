@@ -63,7 +63,7 @@ const ResumeEn = () => {
             startYear={2016}
             endYear={2019}
             jobName='Assistant for drinks at the open-air festival'
-            jobDescription="serving guests, cleaning, setting up tents"
+            jobDescription="Serving guests, cleaning, setting up tents"
             companyName="Gasthaus-pension Krone Kleinheppach"
             jobPlace="Kelterstr. 1, 71404 Kleinheppach, Germany"
           />

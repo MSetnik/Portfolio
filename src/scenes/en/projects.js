@@ -108,8 +108,7 @@ const ProjectsEn = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Notes</h4>
                         <p>
-                          Note taking app made for my own needs, based on design from 
-                          <a href="https://dribbble.com/shots/11875872-A-simple-and-lightweight-note-app"> Dribble.</a> Buildt
+                          Note taking app made for my own needs, based on design from <a href="https://dribbble.com/shots/11875872-A-simple-and-lightweight-note-app">Dribble.</a> Created
                           using Expo framework, customized and tested on both platforms (iOS and Android).
                           Data is stored in local Async storage. App can be viewed in 2 languages (Croatian and English) using
                           system laungage. There is implemented Dark Mode. First app published on <a href="https://play.google.com/store/apps/details?id=com.msetnik.NotesApp"> Play Store.</a> <br/>
