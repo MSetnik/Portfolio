@@ -401,7 +401,7 @@ const ProjectsEn = () => {
                     <Cell col={6}>
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>
-                          Restorani Valpova
+                          Restaurants of Valpovo
                         </h4>
                         <p>
                           App shows Restaurants of Valpovo city and nearby area
@@ -471,7 +471,7 @@ const ProjectsEn = () => {
 
                   <CardText>
                     <h4 style={{ fontWeight: "bold" }}>
-                      Upravljanje skladištem
+                      Warehouse administration
                     </h4>
                     <p>
                       Web app made with AngularJS framework, PHP and MySql database.
