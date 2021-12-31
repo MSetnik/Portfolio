@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="contact-body">
       <Grid className="contact-grid">
-        <Cell className="contact-cell" col={6}>
+        <Cell className="contact-cell" col={6} data-aos='fade-right' data-aos-duration="2000">
           <h2>Matko Setnik</h2>
           <h4>Frontend mobile developer</h4>
           <img
@@ -19,7 +19,7 @@ const Contact = () => {
             Zainteresirani za suradnju? Kontaktirajte me!
           </p>
         </Cell>
-        <Cell className="contact-cell" col={6}>
+        <Cell className="contact-cell" col={6} data-aos='fade-left' data-aos-duration='2000'>
           <h2>Kontakt</h2>
           <hr />
          

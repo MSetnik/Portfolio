@@ -44,6 +44,7 @@
   }
 }
 
+
 .drawer-divider{
   border-bottom: '4px solid red';
   height: 1px
@@ -95,13 +96,10 @@
 
   width: 100%;
   height: 100%;
-  padding-bottom: 10px;
-}
+  /* padding-bottom: 10px; */
 
-.main-container {
-  background-color: red;
   height: 100%;
-  padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .avatar-img {
@@ -456,6 +454,11 @@ textarea {
 }
 
 @media screen and (max-width: 65em) {
+  .main-container {
+    padding-bottom: 10px;
+    overflow: auto;
+  }
+
   .single-card div {
     justify-content: center !important;
     text-align: center;
@@ -531,6 +534,9 @@ textarea {
 
   .resume-left-col {
     width: 100% !important;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
   }
 
   .contact-body {
@@ -572,7 +578,9 @@ textarea {
 
 @media screen and (max-width: 20em) {
   .main-container {
-    height: auto;
+    padding-bottom: 10px;
+    overflow: auto;
+
   }
 
   .contact-btn {
