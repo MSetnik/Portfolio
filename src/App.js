@@ -1,3 +1,7 @@
+//Animacije
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
@@ -5,12 +9,25 @@ import Main from "./routes/main";
 import { Link, useLocation } from "react-router-dom";
 import fire from "./firebase";
 
+// ..
 import hr from './assets/hr.png'
 
 const App = () => {
   const [loc, setLoc] = useState('HR')
   const location = useLocation()
 
+
+    // Animacije
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+      });
+    }, [])
+    
+
+
+  
   const hideToggle = () => {
     const selectorID = document.querySelector(".mdl-layout");
     selectorID.MaterialLayout.toggleDrawer();
@@ -52,6 +69,7 @@ const App = () => {
             <Link to={location.pathname.includes('/en') ? "/en" : '/'}>{location.pathname.includes('/en') ? 'Home' : 'Početna'}</Link>
             <Link to={location.pathname.includes('/en') ? "/en/resume" : '/resume'}>{location.pathname.includes('/en') ? 'Resume' : 'Životopis'}</Link>
             <Link to={location.pathname.includes('/en') ? "/en/projects" : '/projects'}>{location.pathname.includes('/en') ? 'Projects' : 'Projekti'}</Link>
+            <a href="https://3d-experience.vercel.app/" target="_blank" rel="noreferrer">{location.pathname.includes('/en') ? '3D Experience' : '3D Iskustvo'}</a>
             <Link to={location.pathname.includes('/en') ? "/en/contact" : '/contact'}>{location.pathname.includes('/en') ? 'Contact' : 'Kontakt'}</Link>
             <div>|</div>
             <Link to={location.pathname.includes('/en') ? "/" : '/en'} style={{fontSize: 10}}>{location.pathname.includes('/en') ? 'ENG' : 'HR'}</Link>
@@ -68,6 +86,9 @@ const App = () => {
             <Link to={location.pathname.includes('/en') ? "/en/projects" : '/projects'} onClick={() => hideToggle()}>
               {location.pathname.includes('/en') ? 'Projects' : 'Projekti'}
             </Link>
+
+            <a href="https://3d-experience.vercel.app/" target="_blank" rel="noreferrer">{location.pathname.includes('/en') ? '3D Experience' : '3D Iskustvo'}</a>
+            
             <Link to={location.pathname.includes('/en') ? "/en/contact" : '/contact'} onClick={() => hideToggle()}>
              {location.pathname.includes('/en') ? 'Contact' : 'Kontakt'}
             </Link>
@@ -77,6 +98,7 @@ const App = () => {
               onClick={() => hideToggle()}>
                 {location.pathname.includes('/en') ? 'ENG' : 'HR'}
             </Link>
+            
           </Navigation>
         </Drawer>
         <Content>
