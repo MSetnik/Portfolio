@@ -1,6 +1,7 @@
 import Aos from "aos";
 import React from "react";
 import { Grid, Cell } from "react-mdl";
+import Certificates from "../../components/molecules/certificates";
 import Education from "../../components/molecules/education";
 import Experience from "../../components/molecules/experience";
 import Skills from "../../components/molecules/skills";
@@ -112,17 +113,44 @@ const Resume = () => {
             <hr style={{ borderTop: "3px solid #e22947" }} />
 
             <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" data-aos-anchor="#startAnim" >
+              <h2>
+                Certifikati
+              </h2>
+
+              <Grid style={{marginBottom: -30, width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                <Cell col={6} style={{textAlign: 'center'}}>
+                  <p style={{fontWeight: 'bold'}}>Naziv certifikata</p>
+                </Cell>
+
+                <Cell col={6} style={{textAlign: 'center'}}>
+                  <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+                    <p style={{fontWeight: 'bold'}}>Datum polaganja</p>
+                  </div>
+                </Cell>
+              </Grid>
+             
+              <Certificates name='PCI DSS v3.2.1' date='03.02.2022' />
+
+            </div>
+
+
+            <hr style={{ borderTop: "3px solid #e22947" }} />
+
+
+            <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" data-aos-anchor="#startAnim" >
               <h2>Vještine</h2>
     
-              <Skills skill="React Native" progress={50} />
+              <Skills skill="React Native" progress={55} />
       
-              <Skills skill="Android (Java)" progress={35} />
+              <Skills skill="Android (Java)" progress={30} />
       
               <Skills skill="HTML/CSS + Javascript" progress={40} />
       
-              <Skills skill="ReactJS" progress={30} />
+              <Skills skill="ReactJS" progress={40} />
+
+              <Skills skill="Three JS" progress={20} />
       
-              <Skills skill="SQL" progress={40} />
+              <Skills skill="SQL" progress={30} />
       
               <Skills skill="PHP" progress={20} />
       
