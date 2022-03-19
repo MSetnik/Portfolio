@@ -69,7 +69,6 @@ const App = () => {
             <Link to={location.pathname.includes('/en') ? "/en" : '/'}>{location.pathname.includes('/en') ? 'Home' : 'Početna'}</Link>
             <Link to={location.pathname.includes('/en') ? "/en/resume" : '/resume'}>{location.pathname.includes('/en') ? 'Resume' : 'Životopis'}</Link>
             <Link to={location.pathname.includes('/en') ? "/en/projects" : '/projects'}>{location.pathname.includes('/en') ? 'Projects' : 'Projekti'}</Link>
-            <a href="https://3d-experience.vercel.app/" target="_blank" rel="noreferrer">{location.pathname.includes('/en') ? '3D Experience' : '3D Iskustvo'}</a>
             <Link to={location.pathname.includes('/en') ? "/en/contact" : '/contact'}>{location.pathname.includes('/en') ? 'Contact' : 'Kontakt'}</Link>
             <div>|</div>
             <Link to={location.pathname.includes('/en') ? "/" : '/en'} style={{fontSize: 10}}>{location.pathname.includes('/en') ? 'ENG' : 'HR'}</Link>
@@ -87,8 +86,6 @@ const App = () => {
               {location.pathname.includes('/en') ? 'Projects' : 'Projekti'}
             </Link>
 
-            <a href="https://3d-experience.vercel.app/" target="_blank" rel="noreferrer">{location.pathname.includes('/en') ? '3D Experience' : '3D Iskustvo'}</a>
-            
             <Link to={location.pathname.includes('/en') ? "/en/contact" : '/contact'} onClick={() => hideToggle()}>
              {location.pathname.includes('/en') ? 'Contact' : 'Kontakt'}
             </Link>
