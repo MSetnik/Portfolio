@@ -1,9 +1,17 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
-import Certificates from "../../components/molecules/certificates";
+import CertificatesEng from "../../components/molecules/certificatesEng";
 import Education from "../../components/molecules/education";
 import Experience from "../../components/molecules/experience";
 import Skills from "../../components/molecules/skills";
+
+
+const certificatesList = [
+  {
+    name: "PCI DSS v3.2.1",
+    date: "03.02.2022."
+  }
+]
 
 const ResumeEn = () => {
   return (
@@ -107,24 +115,10 @@ const ResumeEn = () => {
 
           <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" data-aos-anchor="#startAnim" >
             <h2>
-              Certifikati
+              Certificates
             </h2>
 
-            <Grid style={{marginBottom: -30, width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-              <Cell col={6} style={{textAlign: 'center'}}>
-                <p style={{fontWeight: 'bold'}}>Name of certificate</p>
-              </Cell>
-
-              <Cell col={6} style={{textAlign: 'center'}}>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
-                  <p style={{fontWeight: 'bold'}}>Date</p>
-                </div>
-              </Cell>
-            </Grid>
-            
-            
-            <Certificates name='PCI DSS v3.2.1' date='03.02.2022' />
-
+            <CertificatesEng certificates={certificatesList} />
 
           </div>
 

@@ -28,6 +28,8 @@ const WebSlider = (props) => {
       return "img-hoteli";
     } else if (imageTitle.includes("skladiste")) {
       return "img-skladiste";
+    } else {
+      return "img-skladiste"
     }
   };
 
@@ -45,22 +47,30 @@ const WebSlider = (props) => {
               <div
                 key={i}
                 className={i === index ? imageCssClass : "web-img"}
+                style={{
+                  marginBottom: properties.length > 1 ? 0 : 40
+                }}
               >
                 <img
+                  alt=""
                   src={object.localUrl}
                   className={setClassName(object.imageTitle)}
                 ></img>
               </div>
             );
           })}
-          <div>
-            <Button style={{ cursor: "pointer" }} onClick={() => prevImg()}>
-              <i className="fa fa-chevron-left"/>
-            </Button>
-            <Button style={{ cursor: "pointer" }} onClick={() => nextImg()}>
-              <i className="fa fa-chevron-right"/>
-            </Button>
-          </div>
+          {
+            properties.length > 1 &&
+            <div>
+              <Button style={{ cursor: "pointer" }} onClick={() => prevImg()}>
+                <i className="fa fa-chevron-left"/>
+              </Button>
+              <Button style={{ cursor: "pointer" }} onClick={() => nextImg()}>
+                <i className="fa fa-chevron-right"/>
+              </Button>
+            </div>
+          }
+          
         </Card>
       </div>
     </div>

@@ -1,13 +1,12 @@
 import { Grid, Cell } from "react-mdl";
 
-const Certificates = ({certificates}) => {
-    console.log(certificates)
+const CertificatesEng = ({certificates}) => {
     return (
 
         <Grid style={{marginBottom: -30, width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
             <Cell col={6} style={{textAlign: 'center'}}>
                 <div>
-                    <p style={{fontWeight: 'bold'}}>Naziv certifikata</p>
+                    <p style={{fontWeight: 'bold'}}>Name of certificate</p>
                     {
                         certificates.map((o,i) => (
                             <p key={i}>{i+1 + ". " + o.name}</p>
@@ -19,7 +18,7 @@ const Certificates = ({certificates}) => {
 
             <Cell col={6} style={{textAlign: 'center'}}>
                 <div>
-                    <p style={{fontWeight: 'bold'}}>Datum polaganja</p>
+                    <p style={{fontWeight: 'bold'}}>Date</p>
                     {
                         certificates.map((o,i) => (
                             <p key={i}>{i+1 + ". " +o.date}</p>
@@ -28,7 +27,17 @@ const Certificates = ({certificates}) => {
                 </div>
             </Cell>
         </Grid>
+        // <Grid style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+        //     <Cell col={6} style={{textAlign: 'center'}}>
+        //         {name}
+        //     </Cell>
+
+        //     <Cell col={6} style={{textAlign: 'center'}}>
+        //         {date}
+            
+        //     </Cell>
+        // </Grid>
     );
 }
 
-export default Certificates;
+export default CertificatesEng;
