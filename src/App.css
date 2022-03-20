@@ -321,6 +321,12 @@
   object-position: 50% 50%;
 }
 
+.mdl-card__supporting-text {
+  text-align: center !important;
+  width: 100% !important;
+  padding: 20px 0 !important;
+}
+
 .web-img-active-slide-left {
   opacity: 1;
   animation-name: slideInWebLeft;
@@ -334,6 +340,17 @@
   display: flex;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+.web-card-text-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.web-project-info-text {
+  width: 80%;
 }
 
 .web-img-active-slide-right {

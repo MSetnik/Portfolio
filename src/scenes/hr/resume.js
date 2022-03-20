@@ -1,4 +1,3 @@
-import Aos from "aos";
 import React from "react";
 import { Grid, Cell } from "react-mdl";
 import Certificates from "../../components/molecules/certificates";
@@ -6,9 +5,14 @@ import Education from "../../components/molecules/education";
 import Experience from "../../components/molecules/experience";
 import Skills from "../../components/molecules/skills";
 
-const Resume = () => {
-   
+const certificatesList = [
+  {
+    name: "PCI DSS v3.2.1",
+    date: "03.02.2022"
+  }
+]
 
+const Resume = () => {
     return (
       <div>
         <Grid>
@@ -117,7 +121,7 @@ const Resume = () => {
                 Certifikati
               </h2>
 
-              <Grid style={{marginBottom: -30, width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+              {/* <Grid style={{marginBottom: -30, width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
                 <Cell col={6} style={{textAlign: 'center'}}>
                   <p style={{fontWeight: 'bold'}}>Naziv certifikata</p>
                 </Cell>
@@ -127,9 +131,9 @@ const Resume = () => {
                     <p style={{fontWeight: 'bold'}}>Datum polaganja</p>
                   </div>
                 </Cell>
-              </Grid>
+              </Grid> */}
              
-              <Certificates name='PCI DSS v3.2.1' date='03.02.2022' />
+              <Certificates certificates={certificatesList} />
 
             </div>
 

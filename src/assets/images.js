@@ -326,6 +326,20 @@ const data = [
             localUrl:
               "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Web%2Fskladiste%2Fskladiste8.png?alt=media&token=6b883b5f-4fa8-40dd-b2df-fd4ef91a084e"
           }
+        ],
+        portfolio: [
+          {
+            index: 0,
+            imageTitle: "portfolio0",
+            localUrl: "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Web%2Fportfolio%2FScreenshot%202022-03-20%20at%2015.36.36.png?alt=media&token=493083db-e2fc-4482-95a9-f187363c92c0"   
+          }
+        ],
+        gym: [
+          {
+            index: 0,
+            imageTitle: "gym0",
+            localUrl: "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Web%2Fgym%2FScreenshot%202022-03-19%20at%2015.53.59.png?alt=media&token=e3614a05-9ff8-4af2-b4e6-bfb9a7e8f66d"
+          }
         ]
       }
     ]
