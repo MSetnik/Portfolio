@@ -21,7 +21,8 @@ const Projects = () => {
       cim: null,
       vsmti: null,
       res: null,
-      notes: null
+      notes: null,
+      hzpp: null,
     }
   ]);
 
@@ -46,7 +47,8 @@ const Projects = () => {
             vsmti: element.vsmtiInfo,
             res: element.restoraniValpova,
             todo: element.RNTodo,
-            notes: element.Notes
+            notes: element.Notes,
+            hzpp: element.hzpp,
           }
         ]);
       });
@@ -70,6 +72,85 @@ const Projects = () => {
     if (activeTab === 0) {
       return (
         <div>
+          {/* project 6 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp}></Slider>
+                      </div>
+                    </Cell>
+                    <Cell col={5} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>Hž raspored vlakova</h4>
+                        <p>
+                          Hž raspored vlakova je aplikacija napravljena kako bi 
+                          pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
+                          i brzo mogli pretražiti raspored polazaka vlakova 
+                          te ujedno i pratiti status i lokaciju odabranog vlaka.
+                          Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
+                          koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
+                          Recoil state managment.
+                          {/* Aplikacija je objavljena na <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.msetnik.NotesApp" rel="noreferrer">Trgovini Play.</a> <br/> */}
+                        </p>
+                      </CardText>
+                    </Cell>
+                  </Grid>
+                </div>
+
+                <CardActions border className="project-card-action">
+                  <Button colored>
+                    <a
+                      href="https://github.com/MSetnik/RNTodoApp-using-cli"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </div>
+          </div>
+
+
+
           {/* project 5 */}
           <div
             className="single-project-grid"
@@ -191,7 +272,7 @@ const Projects = () => {
                         <Slider images={androidImages[0].todo}></Slider>
                       </div>
                     </Cell>
-                    <Cell col={6} id="rn-text">
+                    <Cell col={5} id="rn-text">
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Todo App</h4>
                         <p>
@@ -346,7 +427,7 @@ const Projects = () => {
                         <Slider images={androidImages[0].vsmti}></Slider>
                       </div>
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={5}>
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>VSMTI Info</h4>
                         <p>
@@ -725,6 +806,56 @@ const Projects = () => {
         </div>
       );
     }
+    else if (activeTab === 2) {
+      return (
+        <div>
+          {/* Project 4 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card className="single-card" shadow={5}>
+                <div style={{ display: "inline-block" }}>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="react-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+                      style={{
+                        height: "180px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <CardText>
+                    <h4 style={{ fontWeight: "bold", textAlign: "center", width: "100%" }}>Hž raspored vlakova</h4>
+                    <div className="web-card-text-div">
+                      <p className="web-project-info-text">
+                        Hž raspored vlakova backend napravljen koristeći NodeJS(Express.js). <br/>
+                        <b style={{fontStyle: "italic"}}>! Top secret !</b>
+                     </p>
+                    </div>
+               
+                  </CardText>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      );
+    }
   };
 
   return (
@@ -737,6 +868,7 @@ const Projects = () => {
         >
           <Tab>Mobile</Tab>
           <Tab>Web</Tab>
+          <Tab>Backend</Tab>
         </Tabs>
 
         <Grid>
