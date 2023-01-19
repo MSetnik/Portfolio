@@ -137,7 +137,7 @@ const Projects = () => {
                 <CardActions border className="project-card-action">
                   <Button colored>
                     <a
-                      href="https://github.com/MSetnik/RNTodoApp-using-cli"
+                      href="https://github.com/MSetnik/hzppApp"
                       target="_blank"
                       rel="noreferrer"
                     >
