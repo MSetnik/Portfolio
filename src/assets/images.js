@@ -266,7 +266,45 @@ const data = [
               "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP%2FGroup%2014.png?alt=media&token=1fff15fe-4ec6-448a-9448-efe9c5f1bc29"
           },
         ],
-      }
+        hzpp_rd: [
+          {
+            index: 0,
+            imageTitle: "hzpp_rd_1",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-1.png?alt=media&token=14fc4489-2254-4078-a5be-843664943d61"
+          },
+          {
+            index: 1,
+            imageTitle: "hzpp_rd_2",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-2.png?alt=media&token=b738efe3-077f-4352-990f-281813cc6d42"
+          },
+          {
+            index: 2,
+            imageTitle: "hzpp_rd_3",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-3.png?alt=media&token=90deeaed-98fc-459f-bd77-a048aeb83b76"
+          },
+          {
+            index: 3,
+            imageTitle: "hzpp_rd_4",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-4.png?alt=media&token=d0a3113f-267a-4d01-9a6f-4ceeb078dcfc"
+          },
+          {
+            index: 4,
+            imageTitle: "hzpp_rd_5",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-5.png?alt=media&token=ef560973-4b81-4096-853f-66f85052406a"
+          },
+          {
+            index: 5,
+            imageTitle: "hzpp6",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-6.png?alt=media&token=8957f470-ec18-4496-a92c-601655dd4c96"
+          },
+        ],
+      },
     ],
     Web: [
       {

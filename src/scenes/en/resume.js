@@ -9,7 +9,7 @@ import Skills from "../../components/molecules/skills";
 const certificatesList = [
   {
     name: "PCI DSS v3.2.1",
-    date: "03.02.2022."
+    date: "10.02.2023."
   }
 ]
 
@@ -72,7 +72,7 @@ const ResumeEn = () => {
           <hr style={{ borderTop: "3px solid #e22947" }} />
 
           <div data-aos="zoom-out" data-aos-anchor="#startAnim">
-            <h2>Expirience</h2>
+            <h2>Experience</h2>
 
             <Experience
               startYear={2016}

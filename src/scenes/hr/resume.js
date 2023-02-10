@@ -8,7 +8,7 @@ import Skills from "../../components/molecules/skills";
 const certificatesList = [
   {
     name: "PCI DSS v3.2.1",
-    date: "03.02.2022"
+    date: "10.02.2023"
   }
 ]
 

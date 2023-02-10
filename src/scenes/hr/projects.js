@@ -23,6 +23,7 @@ const Projects = () => {
       res: null,
       notes: null,
       hzpp: null,
+      hzpp_rd: null,
     }
   ]);
 
@@ -49,6 +50,7 @@ const Projects = () => {
             todo: element.RNTodo,
             notes: element.Notes,
             hzpp: element.hzpp,
+            hzpp_rd: element.hzpp_rd,
           }
         ]);
       });
@@ -72,6 +74,72 @@ const Projects = () => {
     if (activeTab === 0) {
       return (
         <div>
+          {/* Project 7 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova (Redesign)</h4>
+                        <p>
+                          Hž raspored vlakova (Redesign) je aplikacija osvježenog dizajna napravljena 
+                          u suradnji sa dizajnericom kako bi pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
+                          i brzo mogli pretražiti raspored polazaka vlakova 
+                          te ujedno i pratiti status i lokaciju odabranog vlaka.
+                          Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
+                          koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
+                          Recoil state managment.
+                          Aplikacija je objavljena na <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Trgovini Play.</a> <br/>
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp_rd}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+
           {/* project 6 */}
           <div
             className="single-project-grid"
@@ -117,34 +185,20 @@ const Projects = () => {
                     </Cell>
                     <Cell col={5} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>Hž raspored vlakova</h4>
+                        <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova</h4>
                         <p>
-                          Hž raspored vlakova je aplikacija napravljena kako bi 
+                          Hž raspored vlakova je aplikacija napravljena u suradnji sa dizajnericom kako bi 
                           pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
                           i brzo mogli pretražiti raspored polazaka vlakova 
                           te ujedno i pratiti status i lokaciju odabranog vlaka.
                           Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
                           koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
                           Recoil state managment.
-                          {/* Aplikacija je objavljena na <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.msetnik.NotesApp" rel="noreferrer">Trgovini Play.</a> <br/> */}
                         </p>
                       </CardText>
                     </Cell>
                   </Grid>
                 </div>
-
-                <CardActions border className="project-card-action">
-                  <Button colored>
-                    <a
-                      href="https://github.com/MSetnik/hzppApp"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Github
-                    </a>
-                  </Button>
-                </CardActions>
               </Card>
             </div>
           </div>
@@ -190,7 +244,7 @@ const Projects = () => {
                   </CardTitle>
 
                   <Grid className="card-mobile-grid">
-                  <Cell col={6} id="rn-text">
+                    <Cell col={6} id="rn-text">
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Notes</h4>
                         <p>

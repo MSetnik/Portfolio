@@ -23,6 +23,7 @@ const ProjectsEn = () => {
       res: null,
       notes: null,
       hzpp: null,
+      hzpp_rd: null,
     }
   ]);
 
@@ -49,6 +50,7 @@ const ProjectsEn = () => {
             todo: element.RNTodo,
             notes: element.Notes,
             hzpp: element.hzpp,
+            hzpp_rd: element.hzpp_rd,
           }
         ]);
       });
@@ -72,6 +74,71 @@ const ProjectsEn = () => {
     if (activeTab === 0) {
       return (
         <div>
+          {/* Project 7 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>HŽ Train schedule (Redesign)</h4>
+                        <p>
+                          Hž Train schedule is a redesign of Hž Train schedule app made in order to
+                          help Croatian train transportation users to easily
+                          and quickly search the schedule of train departures
+                          and at the same time monitor the status and location of the selected train.
+                          Backend made independently using NodeJS (Express.js) and hosted
+                          using AWS. App is created using TypeScript and Recoil state managment.
+                          App is published at <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Play Store.</a> <br/>
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp_rd}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+
             {/* project 6 */}
             <div
             className="single-project-grid"
@@ -117,16 +184,14 @@ const ProjectsEn = () => {
                     </Cell>
                     <Cell col={5} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>Hž raspored vlakova</h4>
+                        <h4 style={{ fontWeight: "bold" }}>Hž train schedule</h4>
                         <p>
-                          Hž raspored vlakova is an application made in order to
-                          helped Croatian train transport users to easily
-                          and could quickly search the schedule of train departures
+                          Hž train schedule is an application made in order to
+                          help Croatian train transportation users to easily
+                          and quickly search the schedule of train departures
                           and at the same time monitor the status and location of the selected train.
                           Backend made independently using NodeJS (Express.js) and hosted
-                          using AWS. App is created using TypeScript and Recoil state managment
-                          {/* Aplikacija je objavljena na <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.msetnik.NotesApp" rel="noreferrer">Trgovini Play.</a> <br/> */}
+                          using AWS. App is created using TypeScript and Recoil state managment.
                         </p>
                       </CardText>
                     </Cell>
@@ -808,10 +873,10 @@ const ProjectsEn = () => {
                   </CardTitle>
 
                   <CardText>
-                    <h4 style={{ fontWeight: "bold", textAlign: "center", width: "100%" }}>Hž raspored vlakova</h4>
+                    <h4 style={{ fontWeight: "bold", textAlign: "center", width: "100%" }}>Hž train schedule</h4>
                     <div className="web-card-text-div">
                       <p className="web-project-info-text">
-                        Hž raspored vlakova backend created using NodeJS(Express.js). <br/>
+                        Hž train schedule backend created using NodeJS(Express.js). <br/>
                         <b style={{fontStyle: "italic"}}>! Top secret !</b>
                      </p>
                     </div>
