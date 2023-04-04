@@ -116,7 +116,7 @@ const ProjectsEn = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>HŽ Train schedule (Redesign)</h4>
                         <p>
-                          Hž Train schedule is a redesign of Hž Train schedule app made in order to
+                          Croatian Train schedule is a redesign of Hž Train schedule app made in order to
                           help Croatian train transportation users to easily
                           and quickly search the schedule of train departures
                           and at the same time monitor the status and location of the selected train.
@@ -186,7 +186,7 @@ const ProjectsEn = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Hž train schedule</h4>
                         <p>
-                          Hž train schedule is an application made in order to
+                          Croatian Train schedule is an application made in order to
                           help Croatian train transportation users to easily
                           and quickly search the schedule of train departures
                           and at the same time monitor the status and location of the selected train.
@@ -876,7 +876,7 @@ const ProjectsEn = () => {
                     <h4 style={{ fontWeight: "bold", textAlign: "center", width: "100%" }}>Hž train schedule</h4>
                     <div className="web-card-text-div">
                       <p className="web-project-info-text">
-                        Hž train schedule backend created using NodeJS(Express.js). <br/>
+                        Croatian Train schedule backend created using NodeJS(Express.js). <br/>
                         <b style={{fontStyle: "italic"}}>! Top secret !</b>
                      </p>
                     </div>

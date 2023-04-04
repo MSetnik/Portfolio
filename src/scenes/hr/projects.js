@@ -116,7 +116,7 @@ const Projects = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova (Redesign)</h4>
                         <p>
-                          Hž raspored vlakova (Redesign) je aplikacija osvježenog dizajna napravljena 
+                          Raspored vlakova Hrvatske (Redesign) je aplikacija osvježenog dizajna napravljena 
                           u suradnji sa dizajnericom kako bi pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
                           i brzo mogli pretražiti raspored polazaka vlakova 
                           te ujedno i pratiti status i lokaciju odabranog vlaka.
@@ -187,7 +187,7 @@ const Projects = () => {
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova</h4>
                         <p>
-                          Hž raspored vlakova je aplikacija napravljena u suradnji sa dizajnericom kako bi 
+                          Raspored vlakova Hrvatske je aplikacija napravljena u suradnji sa dizajnericom kako bi 
                           pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
                           i brzo mogli pretražiti raspored polazaka vlakova 
                           te ujedno i pratiti status i lokaciju odabranog vlaka.
