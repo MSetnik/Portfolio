@@ -86,7 +86,7 @@ const ResumeEn = () => {
 						<h2>Education</h2>
 						<Education
 							startYear="10/2017"
-							endYear="9/2020"
+							endYear="09/2020"
 							schoolName="VSMTI College, Computer Science"
 							schoolDescription="Matije Gupca 78, 33000 Virovitica"
 							schoolWeb="www.vsmti.hr"

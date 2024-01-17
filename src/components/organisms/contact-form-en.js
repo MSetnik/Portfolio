@@ -6,7 +6,7 @@ const TEMPLATE_ID = 'template_jesklnf'
 const USER_ID = 'user_fl3vwYlcnb86cCybHTq4l'
 
 
-const ContactFormEn = () => {
+const ContactFormEn = ({label = "Pošalji"}) => {
     const form = useRef();
 
     const [isLoading, setIsLoading] = useState(false)
@@ -112,7 +112,7 @@ const ContactFormEn = () => {
                     
                     {
                         isLoading ? <iframe src="https://embed.lottiefiles.com/animation/9619" style={{borderWidth: '0px', width: '60%', height: '150px'}} title='s'/> 
-                        : <input className="contact-btn" type="submit" value="Pošalji" />
+                        : <input className="contact-btn" type="submit" value={label} />
                     }
                 </form>
             )

@@ -33,11 +33,11 @@ const ContactEn = () => {
 					data-aos-duration="2000"
 					data-aos-anchor="#startAnim"
 				>
-					<h2>Kontakt</h2>
+					<h2>Contact</h2>
 					<hr />
 
 					<div className="contact-list">
-						<ContactFormEn />
+						<ContactFormEn label='Send' />
 					</div>
 				</Cell>
 			</Grid>
