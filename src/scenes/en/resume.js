@@ -9,7 +9,15 @@ import avatar from "../../assets/avatar.png";
 const certificatesList = [
 	{
 		name: "PCI DSS v3.2.1",
+		date: "03.02.2022.",
+	},
+	{
+		name: "PCI DSS v3.2.1",
 		date: "10.02.2023.",
+	},
+	{
+		name: "PCI DSS v4",
+		date: "13.02.2024.",
 	},
 ];
 

@@ -24,6 +24,7 @@ const ProjectsEn = () => {
       notes: null,
       hzpp: null,
       hzpp_rd: null,
+      hzpp_v3: null,
     }
   ]);
 
@@ -51,6 +52,7 @@ const ProjectsEn = () => {
             notes: element.Notes,
             hzpp: element.hzpp,
             hzpp_rd: element.hzpp_rd,
+            hzpp_v3: element.hzpp_v3,
           }
         ]);
       });
@@ -114,9 +116,70 @@ const ProjectsEn = () => {
                   <Grid className="card-mobile-grid">
                     <Cell col={6} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>HŽ Train schedule (Redesign)</h4>
+                        <h4 style={{ fontWeight: "bold" }}>Croatian Train Schedule (V2)</h4>
                         <p>
-                          Croatian Train schedule is a redesign of Hž Train schedule app made in order to
+                          2nd iteration of Croatian Train Schedule app features new modern design with additional usefull 
+                          features. Added option for buying tickets via official Croatian Railways (HŽ) website and adding tickets
+                          to the app for ease of use. Apps backend is reconstructed and added clever function for adding tickets.
+                          Check it out at the <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Play Store.</a> <br/>
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp_v3}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Project 7 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>Croatian Train Schedule (V1)</h4>
+                        <p>
+                          Croatian Train schedule is a production application of a MVP app made in order to
                           help Croatian train transportation users to easily
                           and quickly search the schedule of train departures
                           and at the same time monitor the status and location of the selected train.
@@ -184,14 +247,15 @@ const ProjectsEn = () => {
                     </Cell>
                     <Cell col={5} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>Hž train schedule</h4>
+                        <h4 style={{ fontWeight: "bold" }}>Croatian Train Schedule</h4>
                         <p>
-                          Croatian Train schedule is an application made in order to
+                          Croatian Train schedule is a MVP (Minimum Viable Product) application made in order to
                           help Croatian train transportation users to easily
                           and quickly search the schedule of train departures
                           and at the same time monitor the status and location of the selected train.
                           Backend made independently using NodeJS (Express.js) and hosted
                           using AWS. App is created using TypeScript and Recoil state managment.
+                          App created for testing the idea.
                         </p>
                       </CardText>
                     </Cell>

@@ -304,6 +304,44 @@ const data = [
               "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-redesign%2Fhzpp-rd-6.png?alt=media&token=8957f470-ec18-4496-a92c-601655dd4c96"
           },
         ],
+        hzpp_v3: [
+          {
+            index: 0,
+            imageTitle: "hzpp_v3_1",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F1.png?alt=media&token=80abf9f3-8923-441e-a034-139f70b61a14"
+          },
+          {
+            index: 1,
+            imageTitle: "hzpp_v3_2",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F2.png?alt=media&token=873e8e4d-5674-4ca7-99c8-4552a68dd533"
+          },
+          {
+            index: 2,
+            imageTitle: "hzpp_v3_3",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F3.png?alt=media&token=0a12d82a-083b-4905-892c-2a7f8c705663"
+          },
+          {
+            index: 3,
+            imageTitle: "hzpp_v3_4",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F4.png?alt=media&token=70059b8b-3127-4246-9f87-a66fc9fbccfb"
+          },
+          {
+            index: 4,
+            imageTitle: "hzpp_v3_5",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F5.png?alt=media&token=53f38a22-dd19-4d75-bba5-9a4c1a7cd1f1"
+          },
+          {
+            index: 5,
+            imageTitle: "hzpp_v3_5",
+            localUrl:
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-dbe68.appspot.com/o/Mobile%2FHZPP-V3%2F6.png?alt=media&token=4d96767e-34be-4f6a-84fd-1acf53fcdfc9"
+          },
+        ],
       },
     ],
     Web: [

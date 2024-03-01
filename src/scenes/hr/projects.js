@@ -24,6 +24,7 @@ const Projects = () => {
       notes: null,
       hzpp: null,
       hzpp_rd: null,
+      hzpp_v3: null
     }
   ]);
 
@@ -51,6 +52,7 @@ const Projects = () => {
             notes: element.Notes,
             hzpp: element.hzpp,
             hzpp_rd: element.hzpp_rd,
+            hzpp_v3: element.hzpp_v3,
           }
         ]);
       });
@@ -114,9 +116,74 @@ const Projects = () => {
                   <Grid className="card-mobile-grid">
                     <Cell col={6} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova (Redesign)</h4>
+                        <h4 style={{ fontWeight: "bold" }}>Raspored Vlakova Hrvatske (V2)</h4>
                         <p>
-                          Raspored vlakova Hrvatske (Redesign) je aplikacija osvježenog dizajna napravljena 
+                          Raspored vlakova Hrvatske (Redesign) je aplikacija osvježenog dizajna i poboljšanih
+                          funkcionalnosti napravljena u suradnji sa dizajnericom kako bi pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
+                          i brzo mogli pretražiti raspored polazaka vlakova te ujedno i pratiti status i lokaciju odabranog vlaka.
+                          U aplikaciji je dodana funkcionalnost kupovanja karte preko web sučelja službene stranice HŽ-a te dodavanje
+                          karte u aplikaciju. Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
+                          koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
+                          Recoil state managment.
+                          Aplikacija je objavljena na <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Trgovini Play.</a> <br/>
+                        </p>
+                      </CardText>
+                    </Cell>
+                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp_v3}></Slider>
+                      </div>
+                    </Cell>
+                  </Grid>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Project 7 */}
+          <div
+            className="single-project-grid"
+            style={{
+              marginTop: "20px"
+            }}
+          >
+            <div style={{ padding: "20px" }}>
+              <Card
+                className="single-card"
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "100%"
+                }}
+              >
+                <div>
+                  <CardTitle
+                    className="project-title"
+                    style={{
+                      backgroundColor: "#00a4d3",
+                      height: "220px",
+                      width: "auto",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <img
+                      alt=""
+                      id="rn-img"
+                      src="https://miro.medium.com/proxy/1*AjesIvV-kkwk6LLvNf1t4A.png"
+                      style={{
+                        height: "220px",
+                        width: "auto"
+                      }}
+                    />
+                  </CardTitle>
+
+                  <Grid className="card-mobile-grid">
+                    <Cell col={6} id="rn-text">
+                      <CardText>
+                        <h4 style={{ fontWeight: "bold" }}>Raspored Vlakova Hrvatske (V1)</h4>
+                        <p>
+                          Raspored vlakova Hrvatske (Redesign) je produkcijska aplikacija osvježenog dizajna napravljena 
                           u suradnji sa dizajnericom kako bi pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
                           i brzo mogli pretražiti raspored polazaka vlakova 
                           te ujedno i pratiti status i lokaciju odabranog vlaka.
@@ -185,15 +252,16 @@ const Projects = () => {
                     </Cell>
                     <Cell col={5} id="rn-text">
                       <CardText>
-                        <h4 style={{ fontWeight: "bold" }}>HŽ Raspored vlakova</h4>
+                        <h4 style={{ fontWeight: "bold" }}>Raspored Vlakova Hrvatske</h4>
                         <p>
-                          Raspored vlakova Hrvatske je aplikacija napravljena u suradnji sa dizajnericom kako bi 
+                          Raspored vlakova Hrvatske je MVP (Minimum Viable Product) aplikacija napravljena u suradnji sa dizajnericom kako bi 
                           pomogla korisnicima prijevoza HŽ-a kako bi jednostavno 
                           i brzo mogli pretražiti raspored polazaka vlakova 
                           te ujedno i pratiti status i lokaciju odabranog vlaka.
                           Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
                           koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
                           Recoil state managment.
+                          Napravljena za testiranje ideje.
                         </p>
                       </CardText>
                     </Cell>
