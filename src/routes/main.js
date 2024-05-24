@@ -12,6 +12,7 @@ import LandingPageEn from "../scenes/en/landingpage";
 import ContactEn from "../scenes/en/contact";
 import ProjectsEn from "../scenes/en/projects";
 import ResumeEn from "../scenes/en/resume";
+import OpelAstraH from "../scenes/hr/opelAstra";
 
 const Main = () => (
   <Switch>
@@ -19,6 +20,7 @@ const Main = () => (
     <Route path="/contact" component={Contact} />
     <Route path="/projects" component={Projects} />
     <Route path="/resume" component={Resume} />
+    <Route path="/opelAstraH" component={OpelAstraH} />
 
     <Route exact path="/en/" component={LandingPageEn} />
     <Route path="/en/contact" component={ContactEn} />

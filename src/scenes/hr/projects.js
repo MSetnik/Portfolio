@@ -114,6 +114,11 @@ const Projects = () => {
                   </CardTitle>
 
                   <Grid className="card-mobile-grid">
+                  <Cell col={6} id="rn-slider" className="slider-mobile-cell">
+                      <div>
+                        <Slider images={androidImages[0].hzpp_v3}></Slider>
+                      </div>
+                    </Cell>
                     <Cell col={6} id="rn-text">
                       <CardText>
                         <h4 style={{ fontWeight: "bold" }}>Raspored Vlakova Hrvatske (V2)</h4>
@@ -130,12 +135,8 @@ const Projects = () => {
                         </p>
                       </CardText>
                     </Cell>
-                    <Cell col={6} id="rn-slider" className="slider-mobile-cell">
-                      <div>
-                        <Slider images={androidImages[0].hzpp_v3}></Slider>
-                      </div>
-                    </Cell>
                   </Grid>
+                   
                 </div>
               </Card>
             </div>
