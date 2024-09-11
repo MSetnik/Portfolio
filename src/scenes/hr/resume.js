@@ -136,6 +136,7 @@ const Resume = () => {
 								"Vlasnik/programer obrta za računalno programiranje"
 							}
 							responsibilities={[]}
+							url="https://mcode.hr/"
 						/>
 
 						<Experience
@@ -145,6 +146,7 @@ const Resume = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
 						/>
 
 						<Experience
@@ -154,6 +156,7 @@ const Resume = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
 						/>
 
 						<Experience
@@ -163,6 +166,7 @@ const Resume = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
 						/>
 
 						<Experience
@@ -172,6 +176,7 @@ const Resume = () => {
 							jobDescription="Kreiranje aplikacije za prikaz informacija o fakultetu"
 							companyName="VSMTI"
 							jobPlace="Matije Gupca 78, Virovitica"
+							url='https://vuv.hr'
 						/>
 						{/* <Experience
 							startYear="01/06/2023"

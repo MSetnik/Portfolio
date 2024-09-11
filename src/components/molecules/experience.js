@@ -23,8 +23,13 @@ const Experience = (props) => {
 							);
 						})}
 					<div>
-						<div>{props.companyName}</div>
-						<div>{props.jobPlace}</div>
+						{
+							props.url ?
+							<div><a href={props.url} target="_blank">{props.companyName}</a></div> :
+							<div>{props.companyName}</div> 
+						
+						}
+						<div>{props.jobPlace}</div> 
 					</div>
 				</Cell>
 			</Grid>

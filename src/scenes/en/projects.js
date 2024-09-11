@@ -126,8 +126,13 @@ const ProjectsEn = () => {
                           2nd iteration of Croatian Train Schedule app features new modern design with additional usefull 
                           features. Added option for buying tickets via official Croatian Railways (HŽ) website and adding tickets
                           to the app for ease of use. Apps backend is reconstructed and added clever function for adding tickets.
-                          Check it out at the <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Play Store.</a> <br/>
+                          Available on <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Android</a> 
+                          {' and'} <a target="_blank"
+                          href="https://apps.apple.com/us/app/raspored-vlakova-hrvatske/id6504168712" rel="noreferrer">iOS</a>
+                          {' devices'}.
+
+                          <br/>
                         </p>
                       </CardText>
                     </Cell>
@@ -186,8 +191,7 @@ const ProjectsEn = () => {
                           and at the same time monitor the status and location of the selected train.
                           Backend made independently using NodeJS (Express.js) and hosted
                           using AWS. App is created using TypeScript and Recoil state managment.
-                          App is published at <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Play Store.</a> <br/>
+                          <br/>
                         </p>
                       </CardText>
                     </Cell>

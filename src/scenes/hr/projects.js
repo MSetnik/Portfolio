@@ -130,8 +130,12 @@ const Projects = () => {
                           karte u aplikaciju. Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
                           koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
                           Recoil state managment.
-                          Aplikacija je objavljena na <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Trgovini Play.</a> <br/>
+                          Aplikacija je dostupna za <a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Android</a> 
+                           {' i '} <a target="_blank"
+                          href="https://apps.apple.com/us/app/raspored-vlakova-hrvatske/id6504168712" rel="noreferrer"> iOS</a>
+                          {' uređaje'}.
+                          <br/>
                         </p>
                       </CardText>
                     </Cell>
@@ -191,8 +195,7 @@ const Projects = () => {
                           Backend napravljen samostalno koristeći NodeJS(Express.js) te hostan 
                           koristeci AWS. Aplikacija napisana pomoću TypeScript-a i koristi
                           Recoil state managment.
-                          Aplikacija je objavljena na <a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.hzppapp" rel="noreferrer">Trgovini Play.</a> <br/>
+                         
                         </p>
                       </CardText>
                     </Cell>

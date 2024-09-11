@@ -130,6 +130,7 @@ const ResumeEn = () => {
 							jobDescription="Business owner/Software Engineer"
 							companyName="MCODE"
 							jobPlace="Valpovo, Croatia"
+							url='https://mcode.hr/en'
 						/>
 
 						<Experience
@@ -139,6 +140,8 @@ const ResumeEn = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
+
 						/>
 
 						<Experience
@@ -148,6 +151,8 @@ const ResumeEn = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
+
 						/>
 
 						<Experience
@@ -157,6 +162,8 @@ const ResumeEn = () => {
 							jobDescription="Frontend mobile developer - React Native"
 							companyName="mStart plus d.o.o."
 							jobPlace="Slavonska avenija 11a, Zagreb"
+							url='https://mstart.hr'
+
 						/>
 
 						<Experience
@@ -166,6 +173,8 @@ const ResumeEn = () => {
 							jobDescription="Creating simple mobile app with information about College"
 							companyName="VSMTI"
 							jobPlace="Matije Gupca 78, Virovitica"
+							url='https://vuv.hr'
+
 						/>
 					</div>
 
